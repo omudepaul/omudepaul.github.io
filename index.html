@@ -3,9 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Paul Omude | Computer Science</title>
 
@@ -13,10 +11,6 @@
           content="Personal academic website of Paul Omude, Ph.D. student in Computer Science at Oklahoma State University.">
 
     <style>
-
-        /* =========================================
-           GENERAL
-        ========================================== */
 
         * {
             margin: 0;
@@ -39,16 +33,14 @@
             padding: 100px 8%;
         }
 
-
-        /* =========================================
+        /* =========================
            NAVIGATION
-        ========================================== */
+        ========================== */
 
         nav {
             position: fixed;
             top: 0;
             left: 0;
-
             width: 100%;
 
             display: flex;
@@ -57,7 +49,7 @@
 
             padding: 18px 8%;
 
-            background: rgba(255, 255, 255, 0.97);
+            background: rgba(255, 255, 255, 0.98);
 
             border-bottom: 1px solid #e2e8f0;
 
@@ -76,7 +68,7 @@
             display: flex;
             align-items: center;
 
-            gap: 30px;
+            gap: 28px;
         }
 
         nav ul li a {
@@ -94,10 +86,9 @@
             color: #2563eb;
         }
 
-
-        /* =========================================
+        /* =========================
            HERO
-        ========================================== */
+        ========================== */
 
         .hero {
             min-height: 100vh;
@@ -133,10 +124,9 @@
             align-items: center;
         }
 
-
-        /* =========================================
+        /* =========================
            PROFILE PHOTO
-        ========================================== */
+        ========================== */
 
         .hero-photo {
             display: flex;
@@ -150,7 +140,6 @@
             height: 440px;
 
             object-fit: cover;
-
             object-position: center top;
 
             border-radius: 20px;
@@ -161,10 +150,9 @@
                 0 25px 60px rgba(0, 0, 0, 0.45);
         }
 
-
-        /* =========================================
+        /* =========================
            HERO TEXT
-        ========================================== */
+        ========================== */
 
         .hero-text {
             text-align: left;
@@ -176,7 +164,6 @@
             color: #93c5fd;
 
             font-size: 14px;
-
             font-weight: 600;
 
             letter-spacing: 3px;
@@ -188,7 +175,6 @@
 
         .hero h1 {
             font-size: 62px;
-
             line-height: 1.1;
 
             margin-bottom: 18px;
@@ -222,10 +208,9 @@
             line-height: 1.8;
         }
 
-
-        /* =========================================
+        /* =========================
            BUTTONS
-        ========================================== */
+        ========================== */
 
         .buttons {
             margin-top: 35px;
@@ -234,7 +219,7 @@
         .btn {
             display: inline-block;
 
-            padding: 13px 28px;
+            padding: 13px 27px;
 
             margin-right: 10px;
             margin-bottom: 10px;
@@ -250,13 +235,11 @@
 
         .btn-primary {
             background: #2563eb;
-
             color: white;
         }
 
         .btn-primary:hover {
             background: #1d4ed8;
-
             transform: translateY(-2px);
         }
 
@@ -274,15 +257,13 @@
             transform: translateY(-2px);
         }
 
-
-        /* =========================================
-           SECTION HEADERS
-        ========================================== */
+        /* =========================
+           SECTION HEADINGS
+        ========================== */
 
         .section-header {
             text-align: center;
-
-            margin-bottom: 50px;
+            margin-bottom: 55px;
         }
 
         .section-header h2 {
@@ -293,9 +274,16 @@
             margin-bottom: 12px;
         }
 
+        .section-header p {
+            color: #64748b;
+
+            max-width: 650px;
+
+            margin: 15px auto 0;
+        }
+
         .line {
             width: 60px;
-
             height: 4px;
 
             background: #2563eb;
@@ -305,10 +293,9 @@
             border-radius: 5px;
         }
 
-
-        /* =========================================
+        /* =========================
            ABOUT
-        ========================================== */
+        ========================== */
 
         .about {
             background: #ffffff;
@@ -332,112 +319,177 @@
             margin-bottom: 20px;
         }
 
+        /* =========================
+           EDUCATION
+        ========================== */
 
-        /* =========================================
-           PROFILE SECTION
-        ========================================== */
-
-        .profile {
+        .education {
             background: #f8fafc;
         }
 
-        .profile-grid {
-            max-width: 1050px;
-
+        .education-container {
+            max-width: 950px;
             margin: auto;
-
-            display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
-            gap: 25px;
         }
 
-        .profile-card {
+        .education-card {
+            display: flex;
+            align-items: flex-start;
+
+            gap: 25px;
+
             background: white;
 
-            padding: 40px 28px;
+            padding: 30px;
+
+            margin-bottom: 20px;
 
             border-radius: 12px;
-
-            text-align: center;
 
             border: 1px solid #e2e8f0;
 
             box-shadow:
-                0 8px 30px rgba(0, 0, 0, 0.05);
+                0 7px 25px rgba(0, 0, 0, 0.04);
 
-            transition: all 0.3s ease;
+            transition: 0.3s;
         }
 
-        .profile-card:hover {
-            transform: translateY(-7px);
+        .education-card:hover {
+            transform: translateY(-4px);
 
             box-shadow:
-                0 15px 35px rgba(0, 0, 0, 0.09);
+                0 12px 30px rgba(0, 0, 0, 0.08);
         }
 
-        .profile-icon {
-            width: 55px;
-            height: 55px;
+        .education-icon {
+            width: 58px;
+            height: 58px;
+
+            flex-shrink: 0;
 
             display: flex;
-            justify-content: center;
             align-items: center;
-
-            margin: 0 auto 20px;
+            justify-content: center;
 
             background: #eff6ff;
 
             border-radius: 50%;
 
-            font-size: 25px;
+            font-size: 26px;
         }
 
-        .profile-card h3 {
-            font-size: 21px;
-
+        .education-details h3 {
             color: #0f172a;
 
-            margin-bottom: 12px;
+            font-size: 21px;
+
+            margin-bottom: 4px;
         }
 
-        .profile-card p {
-            color: #64748b;
+        .education-details h4 {
+            color: #2563eb;
 
             font-size: 16px;
+
+            font-weight: 600;
+
+            margin-bottom: 5px;
         }
 
+        .education-details p {
+            color: #64748b;
+        }
 
-        /* =========================================
-           CONTACT
-        ========================================== */
+        /* =========================
+           CV
+        ========================== */
 
-        .contact {
+        .cv-section {
             background: white;
 
             text-align: center;
         }
 
+        .cv-container {
+            max-width: 750px;
+
+            margin: auto;
+        }
+
+        .cv-container p {
+            font-size: 18px;
+
+            color: #475569;
+
+            margin-bottom: 30px;
+        }
+
+        /* =========================
+           CONTACT
+        ========================== */
+
+        .contact {
+            background: #f8fafc;
+
+            text-align: center;
+        }
+
         .contact-content {
-            max-width: 700px;
+            max-width: 750px;
 
             margin: auto;
         }
 
         .contact-content p {
-            color: #475569;
-
             font-size: 18px;
 
-            margin-bottom: 30px;
+            color: #475569;
+
+            margin-bottom: 35px;
         }
 
+        .social-buttons {
+            display: flex;
 
-        /* =========================================
+            justify-content: center;
+            align-items: center;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+        .social-link {
+            display: inline-block;
+
+            padding: 13px 25px;
+
+            background: white;
+
+            color: #0f172a;
+
+            border: 1px solid #cbd5e1;
+
+            border-radius: 7px;
+
+            text-decoration: none;
+
+            font-weight: 600;
+
+            transition: 0.3s;
+        }
+
+        .social-link:hover {
+            background: #0f172a;
+
+            color: white;
+
+            transform: translateY(-2px);
+        }
+
+        /* =========================
            FOOTER
-        ========================================== */
+        ========================== */
 
         footer {
             background: #0f172a;
@@ -451,20 +503,9 @@
             font-size: 14px;
         }
 
-        footer a {
-            color: #cbd5e1;
-
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: white;
-        }
-
-
-        /* =========================================
+        /* =========================
            TABLET
-        ========================================== */
+        ========================== */
 
         @media (max-width: 900px) {
 
@@ -487,17 +528,11 @@
             .hero h2 {
                 font-size: 23px;
             }
-
-            .profile-grid {
-                grid-template-columns: 1fr;
-                max-width: 600px;
-            }
         }
 
-
-        /* =========================================
+        /* =========================
            MOBILE
-        ========================================== */
+        ========================== */
 
         @media (max-width: 700px) {
 
@@ -510,18 +545,17 @@
             }
 
             nav ul {
-                gap: 15px;
+                gap: 14px;
             }
 
             nav ul li:nth-child(2),
-            nav ul li:nth-child(3) {
+            nav ul li:nth-child(3),
+            nav ul li:nth-child(4) {
                 display: none;
             }
 
             .hero {
-                padding:
-                    110px 25px
-                    70px 25px;
+                padding: 110px 25px 70px;
             }
 
             .hero-container {
@@ -570,24 +604,13 @@
 
             .hero-description {
                 margin-left: auto;
-
                 margin-right: auto;
 
                 font-size: 16px;
             }
 
-            .buttons {
-                text-align: center;
-            }
-
-            .btn {
-                margin:
-                    5px 4px;
-            }
-
             section {
-                padding:
-                    75px 25px;
+                padding: 75px 25px;
             }
 
             .section-header h2 {
@@ -596,6 +619,14 @@
 
             .about-content {
                 font-size: 16px;
+            }
+
+            .education-card {
+                flex-direction: column;
+
+                text-align: center;
+
+                align-items: center;
             }
         }
 
@@ -607,9 +638,9 @@
 <body>
 
 
-<!-- =========================================
+<!-- =========================
      NAVIGATION
-========================================== -->
+========================== -->
 
 <nav>
 
@@ -620,27 +651,23 @@
     <ul>
 
         <li>
-            <a href="#home">
-                Home
-            </a>
+            <a href="#home">Home</a>
         </li>
 
         <li>
-            <a href="#about">
-                About
-            </a>
+            <a href="#about">About</a>
         </li>
 
         <li>
-            <a href="#profile">
-                Profile
-            </a>
+            <a href="#education">Education</a>
         </li>
 
         <li>
-            <a href="#contact">
-                Contact
-            </a>
+            <a href="#cv">CV</a>
+        </li>
+
+        <li>
+            <a href="#contact">Contact</a>
         </li>
 
     </ul>
@@ -648,16 +675,14 @@
 </nav>
 
 
-<!-- =========================================
-     HERO
-========================================== -->
+<!-- =========================
+     HOME
+========================== -->
 
 <section class="hero" id="home">
 
     <div class="hero-container">
 
-
-        <!-- PROFILE PHOTO -->
 
         <div class="hero-photo">
 
@@ -667,8 +692,6 @@
 
         </div>
 
-
-        <!-- INTRODUCTION -->
 
         <div class="hero-text">
 
@@ -705,7 +728,17 @@
                     href="#about"
                     class="btn btn-primary">
 
-                    Learn More
+                    About Me
+
+                </a>
+
+
+                <a
+                    href="cv.pdf"
+                    target="_blank"
+                    class="btn btn-outline">
+
+                    View CV
 
                 </a>
 
@@ -729,20 +762,15 @@
 </section>
 
 
-<!-- =========================================
+<!-- =========================
      ABOUT
-========================================== -->
+========================== -->
 
-<section
-    class="about"
-    id="about">
-
+<section class="about" id="about">
 
     <div class="section-header">
 
-        <h2>
-            About Me
-        </h2>
+        <h2>About Me</h2>
 
         <div class="line"></div>
 
@@ -752,38 +780,22 @@
     <div class="about-content">
 
         <p>
-
             I am a Ph.D. student in Computer Science
             at Oklahoma State University.
+        </p>
 
+        <p>
             My academic and professional journey
             reflects a strong interest in computing,
-            technology, problem solving,
-            innovation, and continuous learning.
-
+            technology, innovation, problem solving,
+            and continuous learning.
         </p>
 
-
         <p>
-
-            I enjoy exploring how computing
-            technologies can be applied to
-            address practical challenges and
-            create meaningful solutions.
-
-        </p>
-
-
-        <p>
-
-            This website serves as my personal
-            academic and professional homepage.
-
-            It provides a central place for
-            information about my education,
-            professional activities, projects,
-            and academic accomplishments.
-
+            I am committed to developing advanced
+            technical knowledge and applying computing
+            skills to practical challenges that can
+            create meaningful impact.
         </p>
 
     </div>
@@ -791,117 +803,155 @@
 </section>
 
 
-<!-- =========================================
-     PROFILE
-========================================== -->
+<!-- =========================
+     EDUCATION
+========================== -->
 
-<section
-    class="profile"
-    id="profile">
-
+<section class="education" id="education">
 
     <div class="section-header">
 
-        <h2>
-            Profile
-        </h2>
+        <h2>Education</h2>
+
+        <div class="line"></div>
+
+        <p>
+            My academic background in Computer Science.
+        </p>
+
+    </div>
+
+
+    <div class="education-container">
+
+
+        <div class="education-card">
+
+            <div class="education-icon">
+                🎓
+            </div>
+
+            <div class="education-details">
+
+                <h3>
+                    Ph.D. in Computer Science
+                </h3>
+
+                <h4>
+                    Oklahoma State University
+                </h4>
+
+                <p>
+                    Doctoral Student
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="education-card">
+
+            <div class="education-icon">
+                🎓
+            </div>
+
+            <div class="education-details">
+
+                <h3>
+                    M.Sc. in Computer Science
+                </h3>
+
+                <h4>
+                    Tai Solarin University of Education
+                </h4>
+
+                <p>
+                    Master of Science in Computer Science
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="education-card">
+
+            <div class="education-icon">
+                🎓
+            </div>
+
+            <div class="education-details">
+
+                <h3>
+                    B.Sc. in Computer Science
+                </h3>
+
+                <h4>
+                    Computer Science
+                </h4>
+
+                <p>
+                    Bachelor of Science in Computer Science
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CV
+========================== -->
+
+<section class="cv-section" id="cv">
+
+    <div class="section-header">
+
+        <h2>Curriculum Vitae</h2>
 
         <div class="line"></div>
 
     </div>
 
 
-    <div class="profile-grid">
+    <div class="cv-container">
+
+        <p>
+            View my curriculum vitae for additional
+            information about my academic background,
+            professional experience, skills, and activities.
+        </p>
 
 
-        <!-- CARD 1 -->
+        <a
+            href="cv.pdf"
+            target="_blank"
+            class="btn btn-primary">
 
-        <div class="profile-card">
+            View My CV
 
-            <div class="profile-icon">
-                🎓
-            </div>
-
-            <h3>
-                Doctoral Student
-            </h3>
-
-            <p>
-
-                Currently pursuing doctoral studies
-                in Computer Science at
-                Oklahoma State University.
-
-            </p>
-
-        </div>
-
-
-        <!-- CARD 2 -->
-
-        <div class="profile-card">
-
-            <div class="profile-icon">
-                💻
-            </div>
-
-            <h3>
-                Computer Science
-            </h3>
-
-            <p>
-
-                Building advanced knowledge
-                and experience across computing
-                and technology.
-
-            </p>
-
-        </div>
-
-
-        <!-- CARD 3 -->
-
-        <div class="profile-card">
-
-            <div class="profile-icon">
-                🌐
-            </div>
-
-            <h3>
-                Technology
-            </h3>
-
-            <p>
-
-                Passionate about innovation,
-                practical problem solving,
-                and emerging computing technologies.
-
-            </p>
-
-        </div>
-
+        </a>
 
     </div>
 
 </section>
 
 
-<!-- =========================================
+<!-- =========================
      CONTACT
-========================================== -->
+========================== -->
 
-<section
-    class="contact"
-    id="contact">
-
+<section class="contact" id="contact">
 
     <div class="section-header">
 
-        <h2>
-            Connect With Me
-        </h2>
+        <h2>Connect With Me</h2>
 
         <div class="line"></div>
 
@@ -911,32 +961,48 @@
     <div class="contact-content">
 
         <p>
-
-            Thank you for visiting my personal website.
-            You can connect with me and view my
-            public projects through my GitHub profile.
-
+            Thank you for visiting my website.
+            Feel free to connect with me through
+            my professional profiles.
         </p>
 
 
-        <a
-            href="https://github.com/omudepaul"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-primary">
+        <div class="social-buttons">
 
-            Visit My GitHub
 
-        </a>
+            <a
+                href="https://github.com/omudepaul"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link">
+
+                GitHub
+
+            </a>
+
+
+            <!-- Replace # with your actual LinkedIn URL -->
+
+            <a
+                href="#"
+                target="_blank"
+                class="social-link">
+
+                LinkedIn
+
+            </a>
+
+
+        </div>
 
     </div>
 
 </section>
 
 
-<!-- =========================================
+<!-- =========================
      FOOTER
-========================================== -->
+========================== -->
 
 <footer>
 
