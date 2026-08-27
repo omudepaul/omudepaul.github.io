@@ -2,19 +2,37 @@
 <html lang="en">
 
 <head>
-    <!-- =====================================================
+    <!-- =========================================================
          BASIC SETTINGS
-    ====================================================== -->
+    ========================================================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0f172a">
 
     <title>Paul Omude | Computer Science</title>
 
-    <!-- =====================================================
+    <meta name="author" content="Paul Omude">
+
+    <meta name="description"
+          content="Personal academic and professional website of Paul Omude, Ph.D. student in Computer Science at Oklahoma State University.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+          href="https://omudepaul.github.io/">
+
+    <!-- =========================================================
+         GOOGLE SEARCH CONSOLE
+    ========================================================== -->
+    <meta name="google-site-verification"
+          content="2x-2qr5etMoK2Clc7fjBcLuymgZpi789T1-sqJq-VNY">
+
+    <!-- =========================================================
          GOOGLE ANALYTICS 4
-    ====================================================== -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZBSQG29DQ"></script>
+    ========================================================== -->
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-QZBSQG29DQ">
+    </script>
 
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -27,35 +45,16 @@
         gtag("config", "G-QZBSQG29DQ");
     </script>
 
-    <!-- =====================================================
-         GOOGLE SEARCH CONSOLE
-    ====================================================== -->
-    <meta name="google-site-verification"
-          content="2x-2qr5etMoK2Clc7fjBcLuymgZpi789T1-sqJq-VNY">
-
-    <!-- =====================================================
-         SEO
-    ====================================================== -->
-    <meta name="author" content="Paul Omude">
-
-    <meta name="description"
-          content="Personal academic and professional website of Paul Omude, Ph.D. student in Computer Science at Oklahoma State University.">
-
-    <meta name="robots" content="index, follow">
-
-    <link rel="canonical"
-          href="https://omudepaul.github.io/">
-
-    <!-- =====================================================
+    <!-- =========================================================
          FAVICON
-    ====================================================== -->
+    ========================================================== -->
     <link rel="icon"
           type="image/svg+xml"
           href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230f172a'/%3E%3Ctext x='50' y='64' text-anchor='middle' font-family='Arial' font-size='42' font-weight='bold' fill='white'%3EPO%3C/text%3E%3C/svg%3E">
 
-    <!-- =====================================================
+    <!-- =========================================================
          SOCIAL PREVIEW
-    ====================================================== -->
+    ========================================================== -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Paul Omude">
@@ -75,10 +74,11 @@
     <meta property="og:image:alt"
           content="Paul Omude - Ph.D. Student in Computer Science">
 
-    <!-- =====================================================
+    <!-- =========================================================
          TWITTER / X
-    ====================================================== -->
-    <meta name="twitter:card" content="summary_large_image">
+    ========================================================== -->
+    <meta name="twitter:card"
+          content="summary_large_image">
 
     <meta name="twitter:title"
           content="Paul Omude | Computer Science">
@@ -89,9 +89,9 @@
     <meta name="twitter:image"
           content="https://omudepaul.github.io/images/og-image.png">
 
-    <!-- =====================================================
+    <!-- =========================================================
          STRUCTURED DATA
-    ====================================================== -->
+    ========================================================== -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -100,18 +100,15 @@
         "url": "https://omudepaul.github.io/",
         "image": "https://omudepaul.github.io/images/profile.jpg",
         "jobTitle": "Ph.D. Student in Computer Science",
-
         "affiliation": {
             "@type": "CollegeOrUniversity",
             "name": "Oklahoma State University"
         },
-
         "memberOf": {
             "@type": "Organization",
             "name": "Association for Computing Machinery",
             "url": "https://www.acm.org/"
         },
-
         "sameAs": [
             "https://github.com/omudepaul",
             "https://www.linkedin.com/in/omudepaul"
@@ -120,10 +117,9 @@
     </script>
 
     <style>
-
-        /* =====================================================
-           GENERAL
-        ====================================================== */
+        /* =========================================================
+           RESET / GENERAL
+        ========================================================== */
 
         * {
             margin: 0;
@@ -142,12 +138,8 @@
             line-height: 1.7;
         }
 
-        section {
-            padding: 100px 8%;
-            scroll-margin-top: 90px;
-        }
-
         img {
+            display: block;
             max-width: 100%;
         }
 
@@ -155,20 +147,25 @@
             -webkit-tap-highlight-color: transparent;
         }
 
-        /* =====================================================
+        section {
+            padding: 100px 8%;
+            scroll-margin-top: 90px;
+        }
+
+        /* =========================================================
            ACCESSIBILITY
-        ====================================================== */
+        ========================================================== */
 
         .skip-link {
             position: absolute;
             top: -70px;
             left: 20px;
+            z-index: 5000;
             padding: 12px 20px;
             background: #2563eb;
-            color: white;
+            color: #ffffff;
             text-decoration: none;
-            border-radius: 6px;
-            z-index: 5000;
+            border-radius: 7px;
         }
 
         .skip-link:focus {
@@ -181,28 +178,28 @@
             outline-offset: 4px;
         }
 
-        /* =====================================================
+        /* =========================================================
            NAVIGATION
-        ====================================================== */
+        ========================================================== */
 
         nav {
             position: fixed;
             top: 0;
             left: 0;
+            z-index: 1000;
+
             width: 100%;
 
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
 
             padding: 18px 5%;
 
-            background: rgba(255,255,255,0.97);
+            background: rgba(255, 255, 255, 0.97);
             backdrop-filter: blur(12px);
 
             border-bottom: 1px solid #e2e8f0;
-
-            z-index: 1000;
         }
 
         .logo {
@@ -222,15 +219,11 @@
 
         .nav-links a {
             position: relative;
-
             color: #475569;
-
             font-size: 13px;
             font-weight: 600;
-
             text-decoration: none;
-
-            transition: 0.25s;
+            transition: color 0.25s;
         }
 
         .nav-links a:hover,
@@ -257,13 +250,8 @@
             width: 100%;
         }
 
-        /* =====================================================
-           MOBILE MENU
-        ====================================================== */
-
         .menu-button {
             display: none;
-
             width: 44px;
             height: 44px;
 
@@ -271,11 +259,8 @@
             justify-content: center;
 
             border: 0;
-
             background: transparent;
-
             color: #0f172a;
-
             cursor: pointer;
         }
 
@@ -284,9 +269,9 @@
             height: 28px;
         }
 
-        /* =====================================================
+        /* =========================================================
            HERO
-        ====================================================== */
+        ========================================================== */
 
         .hero {
             min-height: 100vh;
@@ -298,12 +283,12 @@
             padding-top: 130px;
             padding-bottom: 80px;
 
-            color: white;
+            color: #ffffff;
 
             background:
                 radial-gradient(
                     circle at 80% 20%,
-                    rgba(37,99,235,0.16),
+                    rgba(37, 99, 235, 0.16),
                     transparent 28%
                 ),
                 linear-gradient(
@@ -338,13 +323,12 @@
             object-fit: cover;
             object-position: center top;
 
+            border: 4px solid rgba(255, 255, 255, 0.15);
             border-radius: 22px;
 
-            border: 4px solid rgba(255,255,255,0.15);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
 
-            box-shadow: 0 25px 60px rgba(0,0,0,0.45);
-
-            transition: 0.3s;
+            transition: transform 0.3s;
         }
 
         .hero-photo img:hover {
@@ -353,7 +337,6 @@
 
         .intro {
             display: inline-block;
-
             margin-bottom: 18px;
 
             color: #93c5fd;
@@ -362,7 +345,6 @@
             font-weight: 700;
 
             letter-spacing: 3px;
-
             text-transform: uppercase;
         }
 
@@ -370,7 +352,6 @@
             margin-bottom: 18px;
 
             font-size: clamp(48px, 6vw, 66px);
-
             line-height: 1.08;
         }
 
@@ -387,7 +368,6 @@
             margin-bottom: 28px;
 
             color: #94a3b8;
-
             font-size: 19px;
         }
 
@@ -397,13 +377,12 @@
             color: #cbd5e1;
 
             font-size: 18px;
-
             line-height: 1.85;
         }
 
-        /* =====================================================
+        /* =========================================================
            BUTTONS
-        ====================================================== */
+        ========================================================== */
 
         .buttons {
             display: flex;
@@ -418,7 +397,6 @@
             min-height: 48px;
 
             display: inline-flex;
-
             align-items: center;
             justify-content: center;
 
@@ -427,46 +405,49 @@
             border-radius: 8px;
 
             font-weight: 600;
-
             text-decoration: none;
 
-            transition: 0.25s;
+            transition:
+                transform 0.25s,
+                background 0.25s,
+                color 0.25s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
         }
 
         .btn-primary {
             background: #2563eb;
-            color: white;
+            color: #ffffff;
         }
 
         .btn-primary:hover {
             background: #1d4ed8;
-            transform: translateY(-2px);
         }
 
         .btn-outline {
-            color: white;
+            color: #ffffff;
             border: 2px solid #cbd5e1;
         }
 
         .btn-outline:hover {
-            background: white;
+            background: #ffffff;
             color: #0f172a;
-            transform: translateY(-2px);
         }
 
         .btn-dark {
             background: #0f172a;
-            color: white;
+            color: #ffffff;
         }
 
         .btn-dark:hover {
             background: #1e293b;
-            transform: translateY(-2px);
         }
 
-        /* =====================================================
+        /* =========================================================
            SECTION HEADERS
-        ====================================================== */
+        ========================================================== */
 
         .section-header {
             margin-bottom: 55px;
@@ -500,9 +481,9 @@
             border-radius: 5px;
         }
 
-        /* =====================================================
-           ICONS
-        ====================================================== */
+        /* =========================================================
+           COMMON ICONS
+        ========================================================== */
 
         .round-icon,
         .square-icon {
@@ -536,12 +517,12 @@
             height: 26px;
         }
 
-        /* =====================================================
+        /* =========================================================
            ABOUT
-        ====================================================== */
+        ========================================================== */
 
         .about {
-            background: white;
+            background: #ffffff;
         }
 
         .about-content {
@@ -561,9 +542,9 @@
             margin-bottom: 20px;
         }
 
-        /* =====================================================
+        /* =========================================================
            EDUCATION
-        ====================================================== */
+        ========================================================== */
 
         .education {
             background: #f8fafc;
@@ -584,49 +565,50 @@
 
             padding: 30px;
 
-            background: white;
+            background: #ffffff;
 
             border: 1px solid #e2e8f0;
-
             border-radius: 12px;
 
-            box-shadow: 0 7px 25px rgba(0,0,0,0.04);
+            box-shadow: 0 7px 25px rgba(0, 0, 0, 0.04);
 
-            transition: 0.3s;
+            transition:
+                transform 0.3s,
+                box-shadow 0.3s;
         }
 
         .education-card:hover {
             transform: translateY(-4px);
 
-            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
         }
 
         .education-details h3 {
+            margin-bottom: 4px;
+
             color: #0f172a;
 
             font-size: 21px;
-
-            margin-bottom: 4px;
         }
 
         .education-details h4 {
+            margin-bottom: 5px;
+
             color: #2563eb;
 
             font-size: 16px;
-
-            margin-bottom: 5px;
         }
 
         .education-details p {
             color: #64748b;
         }
 
-        /* =====================================================
+        /* =========================================================
            EXPERIENCE
-        ====================================================== */
+        ========================================================== */
 
         .experience {
-            background: white;
+            background: #ffffff;
         }
 
         .experience-container {
@@ -642,10 +624,9 @@
 
             position: absolute;
 
-            left: 28px;
-
             top: 15px;
             bottom: 15px;
+            left: 28px;
 
             width: 2px;
 
@@ -666,24 +647,21 @@
 
         .experience-marker {
             position: relative;
-
             z-index: 2;
 
             width: 58px;
             height: 58px;
 
             display: flex;
-
             align-items: center;
             justify-content: center;
 
             background: #2563eb;
-
-            color: white;
+            color: #ffffff;
 
             border-radius: 50%;
 
-            box-shadow: 0 7px 20px rgba(37,99,235,0.22);
+            box-shadow: 0 7px 20px rgba(37, 99, 235, 0.22);
         }
 
         .experience-marker svg {
@@ -697,16 +675,17 @@
             background: #f8fafc;
 
             border: 1px solid #e2e8f0;
-
             border-radius: 12px;
 
-            transition: 0.3s;
+            transition:
+                transform 0.3s,
+                box-shadow 0.3s;
         }
 
         .experience-content:hover {
             transform: translateY(-3px);
 
-            box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
         }
 
         .experience-content h3 {
@@ -718,11 +697,11 @@
         }
 
         .experience-organization {
+            margin-bottom: 4px;
+
             color: #2563eb;
 
             font-weight: 600;
-
-            margin-bottom: 4px;
         }
 
         .experience-period {
@@ -745,9 +724,9 @@
             margin-bottom: 8px;
         }
 
-        /* =====================================================
+        /* =========================================================
            TEACHING
-        ====================================================== */
+        ========================================================== */
 
         .teaching {
             background: #f8fafc;
@@ -768,21 +747,22 @@
         .teaching-card {
             padding: 30px;
 
-            background: white;
+            background: #ffffff;
 
             border: 1px solid #e2e8f0;
-
             border-radius: 12px;
 
-            box-shadow: 0 7px 25px rgba(0,0,0,0.04);
+            box-shadow: 0 7px 25px rgba(0, 0, 0, 0.04);
 
-            transition: 0.3s;
+            transition:
+                transform 0.3s,
+                box-shadow 0.3s;
         }
 
         .teaching-card:hover {
             transform: translateY(-5px);
 
-            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
         }
 
         .teaching-card .square-icon {
@@ -795,16 +775,15 @@
             color: #0f172a;
 
             font-size: 20px;
-
             line-height: 1.4;
         }
 
         .teaching-role {
+            margin-bottom: 3px;
+
             color: #2563eb;
 
             font-weight: 600;
-
-            margin-bottom: 3px;
         }
 
         .teaching-school {
@@ -819,12 +798,12 @@
             color: #475569;
         }
 
-        /* =====================================================
+        /* =========================================================
            PUBLICATIONS
-        ====================================================== */
+        ========================================================== */
 
         .publications {
-            background: white;
+            background: #ffffff;
         }
 
         .publications-container {
@@ -834,8 +813,6 @@
         }
 
         .publication-card {
-            position: relative;
-
             display: grid;
 
             grid-template-columns: 65px 1fr;
@@ -849,16 +826,17 @@
             background: #f8fafc;
 
             border: 1px solid #e2e8f0;
-
             border-radius: 14px;
 
-            transition: 0.3s;
+            transition:
+                transform 0.3s,
+                box-shadow 0.3s;
         }
 
         .publication-card:hover {
             transform: translateY(-4px);
 
-            box-shadow: 0 14px 35px rgba(0,0,0,0.07);
+            box-shadow: 0 14px 35px rgba(0, 0, 0, 0.07);
         }
 
         .publication-number {
@@ -866,13 +844,11 @@
             height: 52px;
 
             display: flex;
-
             align-items: center;
             justify-content: center;
 
             background: #2563eb;
-
-            color: white;
+            color: #ffffff;
 
             border-radius: 12px;
 
@@ -886,7 +862,6 @@
             color: #0f172a;
 
             font-size: 21px;
-
             line-height: 1.5;
         }
 
@@ -906,13 +881,11 @@
             padding: 6px 12px;
 
             background: #dbeafe;
-
             color: #1d4ed8;
 
             border-radius: 20px;
 
             font-size: 13px;
-
             font-weight: 600;
         }
 
@@ -924,9 +897,9 @@
             font-size: 14px;
         }
 
-        /* =====================================================
+        /* =========================================================
            SKILLS
-        ====================================================== */
+        ========================================================== */
 
         .skills {
             background: #f8fafc;
@@ -947,21 +920,22 @@
         .skill-card {
             padding: 32px 25px;
 
-            background: white;
+            background: #ffffff;
 
             border: 1px solid #e2e8f0;
-
             border-radius: 12px;
 
-            box-shadow: 0 7px 25px rgba(0,0,0,0.04);
+            box-shadow: 0 7px 25px rgba(0, 0, 0, 0.04);
 
-            transition: 0.3s;
+            transition:
+                transform 0.3s,
+                box-shadow 0.3s;
         }
 
         .skill-card:hover {
             transform: translateY(-5px);
 
-            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
         }
 
         .skill-card .square-icon {
@@ -978,7 +952,6 @@
 
         .skill-list {
             display: flex;
-
             flex-wrap: wrap;
 
             gap: 8px;
@@ -988,24 +961,21 @@
             padding: 7px 11px;
 
             background: #f1f5f9;
-
             color: #475569;
 
             border: 1px solid #e2e8f0;
-
             border-radius: 20px;
 
             font-size: 13px;
-
             font-weight: 600;
         }
 
-        /* =====================================================
+        /* =========================================================
            AWARDS
-        ====================================================== */
+        ========================================================== */
 
         .awards {
-            background: white;
+            background: #ffffff;
         }
 
         .awards-container {
@@ -1016,7 +986,6 @@
 
         .award-card {
             display: flex;
-
             align-items: flex-start;
 
             gap: 25px;
@@ -1026,41 +995,42 @@
             background: #f8fafc;
 
             border: 1px solid #e2e8f0;
-
             border-radius: 12px;
 
-            transition: 0.3s;
+            transition:
+                transform 0.3s,
+                box-shadow 0.3s;
         }
 
         .award-card:hover {
             transform: translateY(-4px);
 
-            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
         }
 
         .award-details h3 {
+            margin-bottom: 5px;
+
             color: #0f172a;
 
             font-size: 22px;
-
-            margin-bottom: 5px;
         }
 
         .award-details h4 {
+            margin-bottom: 8px;
+
             color: #2563eb;
 
             font-size: 16px;
-
-            margin-bottom: 8px;
         }
 
         .award-details p {
             color: #64748b;
         }
 
-        /* =====================================================
+        /* =========================================================
            MEMBERSHIPS
-        ====================================================== */
+        ========================================================== */
 
         .memberships {
             background: #f8fafc;
@@ -1074,28 +1044,28 @@
 
         .membership-card {
             display: flex;
-
             align-items: flex-start;
 
             gap: 25px;
 
             padding: 35px;
 
-            background: white;
+            background: #ffffff;
 
             border: 1px solid #e2e8f0;
-
             border-radius: 12px;
 
-            box-shadow: 0 7px 25px rgba(0,0,0,0.04);
+            box-shadow: 0 7px 25px rgba(0, 0, 0, 0.04);
 
-            transition: 0.3s;
+            transition:
+                transform 0.3s,
+                box-shadow 0.3s;
         }
 
         .membership-card:hover {
             transform: translateY(-4px);
 
-            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
         }
 
         .membership-icon {
@@ -1105,18 +1075,15 @@
             flex-shrink: 0;
 
             display: flex;
-
             align-items: center;
             justify-content: center;
 
             background: #2563eb;
-
-            color: white;
+            color: #ffffff;
 
             border-radius: 50%;
 
             font-size: 18px;
-
             font-weight: 700;
         }
 
@@ -1148,7 +1115,6 @@
             color: #2563eb;
 
             font-weight: 600;
-
             text-decoration: none;
         }
 
@@ -1156,12 +1122,12 @@
             text-decoration: underline;
         }
 
-        /* =====================================================
+        /* =========================================================
            CV
-        ====================================================== */
+        ========================================================== */
 
         .cv-section {
-            background: white;
+            background: #ffffff;
 
             text-align: center;
         }
@@ -1182,17 +1148,15 @@
 
         .cv-buttons {
             display: flex;
-
             justify-content: center;
-
             flex-wrap: wrap;
 
             gap: 12px;
         }
 
-        /* =====================================================
+        /* =========================================================
            CONTACT
-        ====================================================== */
+        ========================================================== */
 
         .contact {
             background: #f8fafc;
@@ -1227,21 +1191,22 @@
         .contact-card {
             padding: 35px 20px;
 
-            background: white;
+            background: #ffffff;
 
             border: 1px solid #e2e8f0;
-
             border-radius: 12px;
 
             text-decoration: none;
 
-            transition: 0.3s;
+            transition:
+                transform 0.3s,
+                box-shadow 0.3s;
         }
 
         .contact-card:hover {
             transform: translateY(-6px);
 
-            box-shadow: 0 15px 35px rgba(0,0,0,0.09);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.09);
         }
 
         .contact-card .round-icon {
@@ -1262,15 +1227,14 @@
             word-break: break-word;
         }
 
-        /* =====================================================
+        /* =========================================================
            FOOTER
-        ====================================================== */
+        ========================================================== */
 
         footer {
             padding: 35px 20px;
 
             background: #0f172a;
-
             color: #94a3b8;
 
             text-align: center;
@@ -1278,9 +1242,7 @@
 
         .footer-links {
             display: flex;
-
             justify-content: center;
-
             flex-wrap: wrap;
 
             gap: 22px;
@@ -1297,19 +1259,18 @@
         }
 
         .footer-links a:hover {
-            color: white;
+            color: #ffffff;
         }
 
         footer p {
             font-size: 14px;
         }
 
-        /* =====================================================
+        /* =========================================================
            RESPONSIVE
-        ====================================================== */
+        ========================================================== */
 
         @media (max-width: 1200px) {
-
             .menu-button {
                 display: flex;
             }
@@ -1323,18 +1284,16 @@
                 width: 100%;
 
                 display: none;
-
                 flex-direction: column;
-
                 align-items: stretch;
 
                 gap: 0;
 
                 padding: 10px 5% 20px;
 
-                background: white;
+                background: #ffffff;
 
-                box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
             }
 
             .nav-links.active {
@@ -1358,11 +1317,9 @@
             .nav-links a::after {
                 display: none;
             }
-
         }
 
         @media (max-width: 900px) {
-
             .hero-container {
                 grid-template-columns: 300px 1fr;
 
@@ -1371,7 +1328,6 @@
 
             .hero-photo img {
                 max-width: 300px;
-
                 height: 370px;
             }
 
@@ -1381,17 +1337,15 @@
             }
 
             .contact-grid {
-                grid-template-columns: 1fr;
-
                 max-width: 600px;
 
                 margin: auto;
-            }
 
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (max-width: 760px) {
-
             nav {
                 padding: 14px 5%;
             }
@@ -1418,7 +1372,6 @@
 
             .hero-photo img {
                 width: 245px;
-
                 height: 295px;
             }
 
@@ -1456,7 +1409,6 @@
             .award-card,
             .membership-card {
                 flex-direction: column;
-
                 align-items: center;
 
                 text-align: center;
@@ -1474,10 +1426,6 @@
                 margin: auto;
             }
 
-            .experience-content {
-                text-align: left;
-            }
-
             .teaching-container,
             .skills-container {
                 grid-template-columns: 1fr;
@@ -1485,28 +1433,19 @@
 
             .publication-card {
                 grid-template-columns: 1fr;
-
-                text-align: left;
             }
 
             .cv-buttons {
                 flex-direction: column;
-
                 align-items: center;
             }
 
             .cv-buttons .btn {
                 width: 220px;
             }
-
         }
 
-        /* =====================================================
-           REDUCED MOTION
-        ====================================================== */
-
         @media (prefers-reduced-motion: reduce) {
-
             html {
                 scroll-behavior: auto;
             }
@@ -1516,9 +1455,7 @@
             *::after {
                 transition-duration: 0.01ms !important;
             }
-
         }
-
     </style>
 </head>
 
@@ -1527,15 +1464,13 @@
 
 <a class="skip-link"
    href="#main-content">
-
     Skip to main content
-
 </a>
 
 
-<!-- =====================================================
+<!-- =============================================================
      NAVIGATION
-====================================================== -->
+============================================================= -->
 
 <nav aria-label="Main navigation">
 
@@ -1543,7 +1478,6 @@
        class="logo">
         Paul Omude
     </a>
-
 
     <button class="menu-button"
             id="menuButton"
@@ -1555,7 +1489,8 @@
         <svg viewBox="0 0 24 24"
              fill="none"
              stroke="currentColor"
-             stroke-width="2">
+             stroke-width="2"
+             aria-hidden="true">
 
             <path d="M4 6h16"></path>
             <path d="M4 12h16"></path>
@@ -1565,13 +1500,13 @@
 
     </button>
 
-
     <ul class="nav-links"
         id="navLinks">
 
         <li>
             <a href="#home"
-               class="nav-link active">
+               class="nav-link active"
+               aria-current="location">
                 Home
             </a>
         </li>
@@ -1654,9 +1589,9 @@
 <main id="main-content">
 
 
-<!-- =====================================================
+<!-- =============================================================
      HOME
-====================================================== -->
+============================================================= -->
 
 <section class="hero"
          id="home">
@@ -1668,10 +1603,11 @@
             <img src="images/profile.jpg"
                  alt="Portrait of Paul Omude"
                  width="360"
-                 height="440">
+                 height="440"
+                 decoding="async"
+                 fetchpriority="high">
 
         </div>
-
 
         <div class="hero-text">
 
@@ -1692,15 +1628,12 @@
             </p>
 
             <p class="hero-description">
-
                 I am a Computer Science Ph.D. student
                 with a passion for technology,
                 innovation, continuous learning,
                 and applying computing knowledge
                 to meaningful real-world problems.
-
             </p>
-
 
             <div class="buttons">
 
@@ -1734,9 +1667,9 @@
 </section>
 
 
-<!-- =====================================================
+<!-- =============================================================
      ABOUT
-====================================================== -->
+============================================================= -->
 
 <section class="about"
          id="about">
@@ -1750,7 +1683,6 @@
         <div class="line"></div>
 
     </div>
-
 
     <div class="about-content">
 
@@ -1778,9 +1710,9 @@
 </section>
 
 
-<!-- =====================================================
+<!-- =============================================================
      EDUCATION
-====================================================== -->
+============================================================= -->
 
 <section class="education"
          id="education">
@@ -1799,9 +1731,7 @@
 
     </div>
 
-
     <div class="education-container">
-
 
         <article class="education-card">
 
@@ -1810,7 +1740,8 @@
                 <svg viewBox="0 0 24 24"
                      fill="none"
                      stroke="currentColor"
-                     stroke-width="2">
+                     stroke-width="2"
+                     aria-hidden="true">
 
                     <path d="M3 10l9-5 9 5-9 5-9-5z"></path>
                     <path d="M7 12v5c3 2 7 2 10 0v-5"></path>
@@ -1845,7 +1776,8 @@
                 <svg viewBox="0 0 24 24"
                      fill="none"
                      stroke="currentColor"
-                     stroke-width="2">
+                     stroke-width="2"
+                     aria-hidden="true">
 
                     <path d="M3 10l9-5 9 5-9 5-9-5z"></path>
                     <path d="M7 12v5c3 2 7 2 10 0v-5"></path>
@@ -1880,7 +1812,8 @@
                 <svg viewBox="0 0 24 24"
                      fill="none"
                      stroke="currentColor"
-                     stroke-width="2">
+                     stroke-width="2"
+                     aria-hidden="true">
 
                     <path d="M3 10l9-5 9 5-9 5-9-5z"></path>
                     <path d="M7 12v5c3 2 7 2 10 0v-5"></path>
@@ -1907,15 +1840,14 @@
 
         </article>
 
-
     </div>
 
 </section>
 
 
-<!-- =====================================================
+<!-- =============================================================
      EXPERIENCE
-====================================================== -->
+============================================================= -->
 
 <section class="experience"
          id="experience">
@@ -1935,9 +1867,7 @@
 
     </div>
 
-
     <div class="experience-container">
-
 
         <article class="experience-card">
 
@@ -1946,13 +1876,15 @@
                 <svg viewBox="0 0 24 24"
                      fill="none"
                      stroke="currentColor"
-                     stroke-width="2">
+                     stroke-width="2"
+                     aria-hidden="true">
 
                     <rect x="4"
                           y="7"
                           width="16"
                           height="12"
-                          rx="2"></rect>
+                          rx="2">
+                    </rect>
 
                     <path d="M9 7V5h6v2"></path>
                     <path d="M4 12h16"></path>
@@ -1960,7 +1892,6 @@
                 </svg>
 
             </div>
-
 
             <div class="experience-content">
 
@@ -1977,7 +1908,6 @@
                 </span>
 
                 <ul>
-
                     <li>
                         Support instruction and student learning
                         in undergraduate computer science courses.
@@ -1997,7 +1927,6 @@
                         Support students through office hours,
                         discussions, and course-related communication.
                     </li>
-
                 </ul>
 
             </div>
@@ -2012,21 +1941,20 @@
                 <svg viewBox="0 0 24 24"
                      fill="none"
                      stroke="currentColor"
-                     stroke-width="2">
+                     stroke-width="2"
+                     aria-hidden="true">
 
                     <path d="M4 5h7a3 3 0 013 3v11a3 3 0 00-3-3H4z"></path>
-
                     <path d="M20 5h-7a3 3 0 00-3 3"></path>
 
                 </svg>
 
             </div>
 
-
             <div class="experience-content">
 
                 <h3>
-                    Computer Science & Physics Teacher
+                    Computer Science &amp; Physics Teacher
                 </h3>
 
                 <p class="experience-organization">
@@ -2034,11 +1962,10 @@
                 </p>
 
                 <span class="experience-period">
-                    Teaching & Academic Support
+                    Teaching &amp; Academic Support
                 </span>
 
                 <ul>
-
                     <li>
                         Taught computer science and physics
                         to secondary school students.
@@ -2058,22 +1985,20 @@
                         Participated in school academic,
                         extracurricular, and student-support activities.
                     </li>
-
                 </ul>
 
             </div>
 
         </article>
 
-
     </div>
 
 </section>
 
 
-<!-- =====================================================
+<!-- =============================================================
      TEACHING
-====================================================== -->
+============================================================= -->
 
 <section class="teaching"
          id="teaching">
@@ -2093,9 +2018,7 @@
 
     </div>
 
-
     <div class="teaching-container">
-
 
         <article class="teaching-card">
 
@@ -2104,7 +2027,8 @@
                 <svg viewBox="0 0 24 24"
                      fill="none"
                      stroke="currentColor"
-                     stroke-width="2">
+                     stroke-width="2"
+                     aria-hidden="true">
 
                     <path d="M8 9l-4 3 4 3"></path>
                     <path d="M16 9l4 3-4 3"></path>
@@ -2142,13 +2066,15 @@
                 <svg viewBox="0 0 24 24"
                      fill="none"
                      stroke="currentColor"
-                     stroke-width="2">
+                     stroke-width="2"
+                     aria-hidden="true">
 
                     <rect x="4"
                           y="4"
                           width="16"
                           height="16"
-                          rx="2"></rect>
+                          rx="2">
+                    </rect>
 
                     <path d="M8 9h8"></path>
                     <path d="M8 13h8"></path>
@@ -2186,7 +2112,8 @@
                 <svg viewBox="0 0 24 24"
                      fill="none"
                      stroke="currentColor"
-                     stroke-width="2">
+                     stroke-width="2"
+                     aria-hidden="true">
 
                     <path d="M8 9l-4 3 4 3"></path>
                     <path d="M16 9l4 3-4 3"></path>
@@ -2216,15 +2143,14 @@
 
         </article>
 
-
     </div>
 
 </section>
 
 
-<!-- =====================================================
-     SELECTED PUBLICATIONS
-====================================================== -->
+<!-- =============================================================
+     PUBLICATIONS
+============================================================= -->
 
 <section class="publications"
          id="publications">
@@ -2244,18 +2170,15 @@
 
     </div>
 
-
     <div class="publications-container">
 
-
-        <!-- PUBLICATION 1 -->
+        <!-- PUBLICATION 01 -->
 
         <article class="publication-card">
 
             <div class="publication-number">
                 01
             </div>
-
 
             <div class="publication-details">
 
@@ -2284,14 +2207,13 @@
         </article>
 
 
-        <!-- PUBLICATION 2 -->
+        <!-- PUBLICATION 02 -->
 
         <article class="publication-card">
 
             <div class="publication-number">
                 02
             </div>
-
 
             <div class="publication-details">
 
@@ -2318,47 +2240,49 @@
             </div>
 
         </article>
-<!-- PUBLICATION 3 -->
 
-<article class="publication-card">
 
-    <div class="publication-number">
-        03
-    </div>
+        <!-- PUBLICATION 03 -->
 
-    <div class="publication-details">
+        <article class="publication-card">
 
-        <h3>
-            A Review of Cybersecurity Threats to AI-Based
-            Disease Detection Systems in Healthcare
-        </h3>
+            <div class="publication-number">
+                03
+            </div>
 
-        <p class="publication-author">
-            authored by Paul Omude
-        </p>
+            <div class="publication-details">
 
-        <span class="publication-type">
-            Publication
-        </span>
+                <h3>
+                    A Review of Cybersecurity Threats to AI-Based
+                    Disease Detection Systems in Healthcare
+                </h3>
 
-        <p class="publication-note">
-            Full citation, publication venue,
-            year, and DOI/link will be added
-            when available.
-        </p>
+                <p class="publication-author">
+                    Authored by Paul Omude
+                </p>
 
-    </div>
+                <span class="publication-type">
+                    Publication
+                </span>
 
-</article>
+                <p class="publication-note">
+                    Full citation, publication venue,
+                    year, and DOI/link will be added
+                    when available.
+                </p>
+
+            </div>
+
+        </article>
 
     </div>
 
 </section>
 
 
-<!-- =====================================================
+<!-- =============================================================
      SKILLS
-====================================================== -->
+============================================================= -->
 
 <section class="skills"
          id="skills">
@@ -2378,9 +2302,7 @@
 
     </div>
 
-
     <div class="skills-container">
-
 
         <article class="skill-card">
 
@@ -2389,7 +2311,8 @@
                 <svg viewBox="0 0 24 24"
                      fill="none"
                      stroke="currentColor"
-                     stroke-width="2">
+                     stroke-width="2"
+                     aria-hidden="true">
 
                     <path d="M8 9l-4 3 4 3"></path>
                     <path d="M16 9l4 3-4 3"></path>
@@ -2404,12 +2327,10 @@
             </h3>
 
             <div class="skill-list">
-
                 <span class="skill-tag">C</span>
                 <span class="skill-tag">C++</span>
                 <span class="skill-tag">Java</span>
                 <span class="skill-tag">JavaScript</span>
-
             </div>
 
         </article>
@@ -2422,9 +2343,14 @@
                 <svg viewBox="0 0 24 24"
                      fill="none"
                      stroke="currentColor"
-                     stroke-width="2">
+                     stroke-width="2"
+                     aria-hidden="true">
 
-                    <circle cx="12" cy="12" r="9"></circle>
+                    <circle cx="12"
+                            cy="12"
+                            r="9">
+                    </circle>
+
                     <path d="M3 12h18"></path>
 
                 </svg>
@@ -2436,12 +2362,10 @@
             </h3>
 
             <div class="skill-list">
-
                 <span class="skill-tag">HTML</span>
                 <span class="skill-tag">CSS</span>
                 <span class="skill-tag">JavaScript</span>
                 <span class="skill-tag">Node.js</span>
-
             </div>
 
         </article>
@@ -2454,10 +2378,19 @@
                 <svg viewBox="0 0 24 24"
                      fill="none"
                      stroke="currentColor"
-                     stroke-width="2">
+                     stroke-width="2"
+                     aria-hidden="true">
 
-                    <circle cx="6" cy="6" r="2"></circle>
-                    <circle cx="18" cy="18" r="2"></circle>
+                    <circle cx="6"
+                            cy="6"
+                            r="2">
+                    </circle>
+
+                    <circle cx="18"
+                            cy="18"
+                            r="2">
+                    </circle>
+
                     <path d="M8 6h4a4 4 0 014 4v6"></path>
 
                 </svg>
@@ -2469,12 +2402,10 @@
             </h3>
 
             <div class="skill-list">
-
                 <span class="skill-tag">Git</span>
                 <span class="skill-tag">GitHub</span>
                 <span class="skill-tag">GitHub Pages</span>
                 <span class="skill-tag">CI/CD</span>
-
             </div>
 
         </article>
@@ -2487,9 +2418,16 @@
                 <svg viewBox="0 0 24 24"
                      fill="none"
                      stroke="currentColor"
-                     stroke-width="2">
+                     stroke-width="2"
+                     aria-hidden="true">
 
-                    <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                    <rect x="4"
+                          y="4"
+                          width="16"
+                          height="16"
+                          rx="2">
+                    </rect>
+
                     <path d="M8 8h8v8H8z"></path>
 
                 </svg>
@@ -2501,19 +2439,9 @@
             </h3>
 
             <div class="skill-list">
-
-                <span class="skill-tag">
-                    Operating Systems
-                </span>
-
-                <span class="skill-tag">
-                    Computer Networks
-                </span>
-
-                <span class="skill-tag">
-                    Software Engineering
-                </span>
-
+                <span class="skill-tag">Operating Systems</span>
+                <span class="skill-tag">Computer Networks</span>
+                <span class="skill-tag">Software Engineering</span>
             </div>
 
         </article>
@@ -2526,7 +2454,8 @@
                 <svg viewBox="0 0 24 24"
                      fill="none"
                      stroke="currentColor"
-                     stroke-width="2">
+                     stroke-width="2"
+                     aria-hidden="true">
 
                     <path d="M4 19V9"></path>
                     <path d="M10 19V5"></path>
@@ -2538,23 +2467,13 @@
             </div>
 
             <h3>
-                Data & Computing
+                Data &amp; Computing
             </h3>
 
             <div class="skill-list">
-
-                <span class="skill-tag">
-                    Data Analysis
-                </span>
-
-                <span class="skill-tag">
-                    Machine Learning
-                </span>
-
-                <span class="skill-tag">
-                    Artificial Intelligence
-                </span>
-
+                <span class="skill-tag">Data Analysis</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Artificial Intelligence</span>
             </div>
 
         </article>
@@ -2567,9 +2486,14 @@
                 <svg viewBox="0 0 24 24"
                      fill="none"
                      stroke="currentColor"
-                     stroke-width="2">
+                     stroke-width="2"
+                     aria-hidden="true">
 
-                    <circle cx="12" cy="8" r="4"></circle>
+                    <circle cx="12"
+                            cy="8"
+                            r="4">
+                    </circle>
+
                     <path d="M4 21c1-5 4-7 8-7s7 2 8 7"></path>
 
                 </svg>
@@ -2581,25 +2505,22 @@
             </h3>
 
             <div class="skill-list">
-
                 <span class="skill-tag">Teaching</span>
                 <span class="skill-tag">Technical Writing</span>
                 <span class="skill-tag">Problem Solving</span>
                 <span class="skill-tag">Student Support</span>
-
             </div>
 
         </article>
-
 
     </div>
 
 </section>
 
 
-<!-- =====================================================
+<!-- =============================================================
      AWARDS
-====================================================== -->
+============================================================= -->
 
 <section class="awards"
          id="awards">
@@ -2607,7 +2528,7 @@
     <div class="section-header">
 
         <h2>
-            Awards & Honors
+            Awards &amp; Honors
         </h2>
 
         <div class="line"></div>
@@ -2618,7 +2539,6 @@
 
     </div>
 
-
     <div class="awards-container">
 
         <article class="award-card">
@@ -2628,7 +2548,8 @@
                 <svg viewBox="0 0 24 24"
                      fill="none"
                      stroke="currentColor"
-                     stroke-width="2">
+                     stroke-width="2"
+                     aria-hidden="true">
 
                     <path d="M8 4h8v4a4 4 0 01-8 0V4z"></path>
                     <path d="M8 6H4c0 4 2 6 5 6"></path>
@@ -2639,7 +2560,6 @@
                 </svg>
 
             </div>
-
 
             <div class="award-details">
 
@@ -2666,9 +2586,9 @@
 </section>
 
 
-<!-- =====================================================
+<!-- =============================================================
      MEMBERSHIPS
-====================================================== -->
+============================================================= -->
 
 <section class="memberships"
          id="memberships">
@@ -2688,15 +2608,14 @@
 
     </div>
 
-
     <div class="memberships-container">
 
         <article class="membership-card">
 
-            <div class="membership-icon">
+            <div class="membership-icon"
+                 aria-hidden="true">
                 ACM
             </div>
-
 
             <div class="membership-details">
 
@@ -2734,9 +2653,9 @@
 </section>
 
 
-<!-- =====================================================
+<!-- =============================================================
      CV
-====================================================== -->
+============================================================= -->
 
 <section class="cv-section"
          id="cv">
@@ -2751,7 +2670,6 @@
 
     </div>
 
-
     <div class="cv-container">
 
         <p>
@@ -2760,7 +2678,6 @@
             professional experience, technical skills,
             publications, and activities.
         </p>
-
 
         <div class="cv-buttons">
 
@@ -2773,7 +2690,6 @@
                 View CV
 
             </a>
-
 
             <a href="cv.pdf"
                download="Paul-Omude-CV.pdf"
@@ -2791,9 +2707,9 @@
 </section>
 
 
-<!-- =====================================================
+<!-- =============================================================
      CONTACT
-====================================================== -->
+============================================================= -->
 
 <section class="contact"
          id="contact">
@@ -2808,7 +2724,6 @@
 
     </div>
 
-
     <div class="contact-content">
 
         <p class="contact-intro">
@@ -2817,9 +2732,9 @@
             email or my professional profiles.
         </p>
 
-
         <div class="contact-grid">
 
+            <!-- EMAIL -->
 
             <a href="mailto:omudepaul@gmail.com"
                class="contact-card"
@@ -2830,13 +2745,15 @@
                     <svg viewBox="0 0 24 24"
                          fill="none"
                          stroke="currentColor"
-                         stroke-width="2">
+                         stroke-width="2"
+                         aria-hidden="true">
 
                         <rect x="3"
                               y="5"
                               width="18"
                               height="14"
-                              rx="2"></rect>
+                              rx="2">
+                        </rect>
 
                         <path d="M3 7l9 6 9-6"></path>
 
@@ -2855,6 +2772,8 @@
             </a>
 
 
+            <!-- LINKEDIN -->
+
             <a href="https://www.linkedin.com/in/omudepaul"
                target="_blank"
                rel="noopener noreferrer"
@@ -2864,7 +2783,8 @@
                 <div class="round-icon">
 
                     <svg viewBox="0 0 24 24"
-                         fill="currentColor">
+                         fill="currentColor"
+                         aria-hidden="true">
 
                         <path d="M6 8H3v13h3V8zm.2-4.1C6.2 2.9 5.4 2 4.5 2S2.8 2.9 2.8 3.9 3.6 5.7 4.5 5.7s1.7-.8 1.7-1.8zM21 13.5c0-4-2.1-5.8-4.9-5.8-2.3 0-3.3 1.3-3.9 2.2V8H9.1v13h3.1v-6.4c0-1.7.3-3.4 2.5-3.4 2.1 0 2.2 2 2.2 3.5V21H20v-7.5h1z"></path>
 
@@ -2883,6 +2803,8 @@
             </a>
 
 
+            <!-- GITHUB -->
+
             <a href="https://github.com/omudepaul"
                target="_blank"
                rel="noopener noreferrer"
@@ -2892,7 +2814,8 @@
                 <div class="round-icon">
 
                     <svg viewBox="0 0 24 24"
-                         fill="currentColor">
+                         fill="currentColor"
+                         aria-hidden="true">
 
                         <path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.7.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.1 9.1 0 015 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.6 5 .4.3.7 1 .7 2v3c0 .3.2.6.7.5 4-1.4 6.8-5.2 6.8-9.7C22 6.6 17.5 2 12 2z"></path>
 
@@ -2910,7 +2833,6 @@
 
             </a>
 
-
         </div>
 
     </div>
@@ -2921,9 +2843,9 @@
 </main>
 
 
-<!-- =====================================================
+<!-- =============================================================
      FOOTER
-====================================================== -->
+============================================================= -->
 
 <footer>
 
@@ -2969,23 +2891,22 @@
 
     </div>
 
-
     <p>
         © <span id="year"></span>
-        Paul Omude.
-        All Rights Reserved.
+        Paul Omude. All Rights Reserved.
     </p>
 
 </footer>
 
 
-<!-- =====================================================
+<!-- =============================================================
      JAVASCRIPT
-====================================================== -->
+============================================================= -->
 
 <script>
-
-    /* MOBILE MENU */
+    /* =========================================================
+       MOBILE MENU
+    ========================================================== */
 
     const menuButton =
         document.getElementById("menuButton");
@@ -2994,20 +2915,37 @@
         document.getElementById("navLinks");
 
 
+    function setMenuState(isOpen) {
+
+        navLinks.classList.toggle(
+            "active",
+            isOpen
+        );
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            String(isOpen)
+        );
+
+        menuButton.setAttribute(
+            "aria-label",
+            isOpen
+                ? "Close navigation menu"
+                : "Open navigation menu"
+        );
+    }
+
+
     menuButton.addEventListener(
         "click",
         function () {
 
-            navLinks.classList.toggle("active");
-
             const isOpen =
-                navLinks.classList.contains("active");
+                !navLinks.classList.contains(
+                    "active"
+                );
 
-            menuButton.setAttribute(
-                "aria-expanded",
-                isOpen
-            );
-
+            setMenuState(isOpen);
         }
     );
 
@@ -3021,21 +2959,35 @@
                     "click",
                     function () {
 
-                        navLinks.classList.remove("active");
-
-                        menuButton.setAttribute(
-                            "aria-expanded",
-                            "false"
-                        );
-
+                        setMenuState(false);
                     }
                 );
-
             }
         );
 
 
-    /* ACTIVE NAVIGATION */
+    document.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (
+                event.key === "Escape" &&
+                navLinks.classList.contains(
+                    "active"
+                )
+            ) {
+
+                setMenuState(false);
+
+                menuButton.focus();
+            }
+        }
+    );
+
+
+    /* =========================================================
+       ACTIVE NAVIGATION
+    ========================================================== */
 
     const sections =
         document.querySelectorAll(
@@ -3065,6 +3017,9 @@
                                         "active"
                                     );
 
+                                    link.removeAttribute(
+                                        "aria-current"
+                                    );
                                 }
                             );
 
@@ -3083,20 +3038,20 @@
                                     "active"
                                 );
 
+                                activeLink.setAttribute(
+                                    "aria-current",
+                                    "location"
+                                );
                             }
-
                         }
-
                     }
                 );
-
             },
 
             {
                 rootMargin:
                     "-35% 0px -55% 0px"
             }
-
         );
 
 
@@ -3104,12 +3059,13 @@
         function (section) {
 
             observer.observe(section);
-
         }
     );
 
 
-    /* AUTOMATIC YEAR */
+    /* =========================================================
+       AUTOMATIC COPYRIGHT YEAR
+    ========================================================== */
 
     document.getElementById(
         "year"
@@ -3117,7 +3073,9 @@
         new Date().getFullYear();
 
 
-    /* GOOGLE ANALYTICS CUSTOM EVENTS */
+    /* =========================================================
+       GOOGLE ANALYTICS CUSTOM EVENTS
+    ========================================================== */
 
     document
         .querySelectorAll(
@@ -3144,7 +3102,6 @@
                                 "event",
                                 eventName,
                                 {
-
                                     event_category:
                                         "website_interaction",
 
@@ -3159,21 +3116,15 @@
 
                                     transport_type:
                                         "beacon"
-
                                 }
                             );
-
                         }
-
                     }
                 );
-
             }
         );
-
 </script>
 
 
 </body>
-
 </html>
