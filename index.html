@@ -37,6 +37,11 @@
 
         section {
             padding: 100px 8%;
+            scroll-margin-top: 75px;
+        }
+
+        a {
+            -webkit-tap-highlight-color: transparent;
         }
 
 
@@ -57,7 +62,9 @@
 
             padding: 18px 8%;
 
-            background: rgba(255, 255, 255, 0.98);
+            background: rgba(255, 255, 255, 0.97);
+
+            backdrop-filter: blur(10px);
 
             border-bottom: 1px solid #e2e8f0;
 
@@ -68,9 +75,10 @@
             font-size: 22px;
             font-weight: 700;
             color: #0f172a;
+            white-space: nowrap;
         }
 
-        nav ul {
+        .nav-links {
             list-style: none;
 
             display: flex;
@@ -79,7 +87,7 @@
             gap: 28px;
         }
 
-        nav ul li a {
+        .nav-links li a {
             text-decoration: none;
 
             color: #475569;
@@ -90,8 +98,35 @@
             transition: 0.3s;
         }
 
-        nav ul li a:hover {
+        .nav-links li a:hover {
             color: #2563eb;
+        }
+
+
+        /* =========================================
+           MOBILE MENU BUTTON
+        ========================================== */
+
+        .menu-button {
+            display: none;
+
+            background: none;
+            border: none;
+
+            cursor: pointer;
+
+            width: 42px;
+            height: 42px;
+
+            align-items: center;
+            justify-content: center;
+
+            color: #0f172a;
+        }
+
+        .menu-button svg {
+            width: 28px;
+            height: 28px;
         }
 
 
@@ -186,6 +221,7 @@
 
         .hero h1 {
             font-size: 62px;
+
             line-height: 1.1;
 
             margin-bottom: 18px;
@@ -225,16 +261,25 @@
         ========================================== */
 
         .buttons {
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 10px;
+
             margin-top: 35px;
         }
 
         .btn {
-            display: inline-block;
+            display: inline-flex;
 
-            padding: 13px 27px;
+            align-items: center;
+            justify-content: center;
 
-            margin-right: 10px;
-            margin-bottom: 10px;
+            gap: 8px;
+
+            min-height: 48px;
+
+            padding: 12px 24px;
 
             border-radius: 7px;
 
@@ -243,6 +288,11 @@
             font-weight: 600;
 
             transition: all 0.3s ease;
+        }
+
+        .btn svg {
+            width: 18px;
+            height: 18px;
         }
 
         .btn-primary {
@@ -313,7 +363,7 @@
         ========================================== */
 
         .about {
-            background: #ffffff;
+            background: white;
         }
 
         .about-content {
@@ -368,7 +418,7 @@
             box-shadow:
                 0 7px 25px rgba(0, 0, 0, 0.04);
 
-            transition: 0.3s;
+            transition: all 0.3s ease;
         }
 
         .education-card:hover {
@@ -390,9 +440,14 @@
 
             background: #eff6ff;
 
-            border-radius: 50%;
+            color: #2563eb;
 
-            font-size: 26px;
+            border-radius: 50%;
+        }
+
+        .education-icon svg {
+            width: 27px;
+            height: 27px;
         }
 
         .education-details h3 {
@@ -441,6 +496,27 @@
             margin-bottom: 30px;
         }
 
+        .cv-buttons {
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+        .cv-download {
+            background: #0f172a;
+            color: white;
+        }
+
+        .cv-download:hover {
+            background: #1e293b;
+
+            transform: translateY(-2px);
+        }
+
 
         /* =========================================
            CONTACT
@@ -480,7 +556,7 @@
         .contact-card {
             background: white;
 
-            padding: 32px 20px;
+            padding: 35px 20px;
 
             border-radius: 12px;
 
@@ -502,8 +578,8 @@
         }
 
         .contact-icon {
-            width: 55px;
-            height: 55px;
+            width: 58px;
+            height: 58px;
 
             display: flex;
             align-items: center;
@@ -516,9 +592,11 @@
             color: #2563eb;
 
             border-radius: 50%;
+        }
 
-            font-weight: 700;
-            font-size: 19px;
+        .contact-icon svg {
+            width: 27px;
+            height: 27px;
         }
 
         .contact-card h3 {
@@ -557,17 +635,25 @@
 
             justify-content: center;
 
+            align-items: center;
+
             flex-wrap: wrap;
 
-            gap: 20px;
+            gap: 22px;
 
-            margin-bottom: 15px;
+            margin-bottom: 17px;
         }
 
         .footer-links a {
             color: #cbd5e1;
 
             text-decoration: none;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 6px;
 
             font-size: 14px;
 
@@ -576,6 +662,11 @@
 
         .footer-links a:hover {
             color: white;
+        }
+
+        .footer-links svg {
+            width: 17px;
+            height: 17px;
         }
 
         footer p {
@@ -611,7 +702,9 @@
 
             .contact-grid {
                 grid-template-columns: 1fr;
+
                 max-width: 600px;
+
                 margin: auto;
             }
         }
@@ -624,21 +717,59 @@
         @media (max-width: 700px) {
 
             nav {
-                padding: 16px 5%;
+                padding: 14px 5%;
             }
 
             .logo {
                 font-size: 19px;
             }
 
-            nav ul {
-                gap: 14px;
+            .menu-button {
+                display: flex;
             }
 
-            nav ul li:nth-child(2),
-            nav ul li:nth-child(3),
-            nav ul li:nth-child(4) {
+            .nav-links {
+                position: absolute;
+
+                top: 70px;
+                left: 0;
+
+                width: 100%;
+
                 display: none;
+
+                flex-direction: column;
+
+                align-items: stretch;
+
+                gap: 0;
+
+                background: white;
+
+                padding: 10px 5% 20px;
+
+                border-bottom: 1px solid #e2e8f0;
+
+                box-shadow:
+                    0 10px 25px rgba(0, 0, 0, 0.08);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                width: 100%;
+            }
+
+            .nav-links li a {
+                display: block;
+
+                width: 100%;
+
+                padding: 13px 8px;
+
+                border-bottom: 1px solid #f1f5f9;
             }
 
             .hero {
@@ -695,6 +826,10 @@
                 font-size: 16px;
             }
 
+            .buttons {
+                justify-content: center;
+            }
+
             section {
                 padding: 75px 25px;
             }
@@ -715,8 +850,14 @@
                 align-items: center;
             }
 
-            .footer-links {
-                gap: 15px;
+            .cv-buttons {
+                flex-direction: column;
+
+                align-items: center;
+            }
+
+            .cv-buttons .btn {
+                width: 220px;
             }
         }
 
@@ -738,36 +879,48 @@
         Paul Omude
     </div>
 
-    <ul>
+
+    <button
+        class="menu-button"
+        id="menuButton"
+        aria-label="Open navigation menu"
+        aria-expanded="false">
+
+        <svg viewBox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="2"
+             stroke-linecap="round">
+
+            <path d="M4 6h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 18h16"></path>
+
+        </svg>
+
+    </button>
+
+
+    <ul class="nav-links" id="navLinks">
 
         <li>
-            <a href="#home">
-                Home
-            </a>
+            <a href="#home">Home</a>
         </li>
 
         <li>
-            <a href="#about">
-                About
-            </a>
+            <a href="#about">About</a>
         </li>
 
         <li>
-            <a href="#education">
-                Education
-            </a>
+            <a href="#education">Education</a>
         </li>
 
         <li>
-            <a href="#cv">
-                CV
-            </a>
+            <a href="#cv">CV</a>
         </li>
 
         <li>
-            <a href="#contact">
-                Contact
-            </a>
+            <a href="#contact">Contact</a>
         </li>
 
     </ul>
@@ -784,8 +937,6 @@
     <div class="hero-container">
 
 
-        <!-- PROFILE PHOTO -->
-
         <div class="hero-photo">
 
             <img
@@ -794,8 +945,6 @@
 
         </div>
 
-
-        <!-- INTRODUCTION -->
 
         <div class="hero-text">
 
@@ -828,6 +977,7 @@
 
             <div class="buttons">
 
+
                 <a
                     href="#about"
                     class="btn btn-primary">
@@ -843,6 +993,16 @@
                     rel="noopener noreferrer"
                     class="btn btn-outline">
 
+                    <svg viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2">
+
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+
+                    </svg>
+
                     View CV
 
                 </a>
@@ -854,9 +1014,17 @@
                     rel="noopener noreferrer"
                     class="btn btn-outline">
 
+                    <svg viewBox="0 0 24 24"
+                         fill="currentColor">
+
+                        <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.2c-3.23.7-3.91-1.37-3.91-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.58-.29-5.29-1.29-5.29-5.75 0-1.27.45-2.31 1.19-3.12-.12-.29-.52-1.48.11-3.08 0 0 .97-.31 3.17 1.19A11.05 11.05 0 0 1 12 6.01c.98 0 1.96.13 2.88.39 2.2-1.5 3.17-1.19 3.17-1.19.63 1.6.23 2.79.11 3.08.74.81 1.19 1.85 1.19 3.12 0 4.47-2.72 5.45-5.31 5.74.42.36.79 1.07.79 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7z"></path>
+
+                    </svg>
+
                     GitHub
 
                 </a>
+
 
             </div>
 
@@ -875,9 +1043,7 @@
 
     <div class="section-header">
 
-        <h2>
-            About Me
-        </h2>
+        <h2>About Me</h2>
 
         <div class="line"></div>
 
@@ -887,30 +1053,20 @@
     <div class="about-content">
 
         <p>
-
             I am a Ph.D. student in Computer Science
             at Oklahoma State University.
-
         </p>
 
-
         <p>
-
-            My academic and professional journey
-            reflects a strong interest in computing,
-            technology, innovation, problem solving,
-            and continuous learning.
-
+            My academic and professional journey reflects
+            a strong interest in computing, technology,
+            innovation, problem solving, and continuous learning.
         </p>
 
-
         <p>
-
-            I am committed to developing advanced
-            technical knowledge and applying computing
-            skills to practical challenges that can
-            create meaningful impact.
-
+            I am committed to developing advanced technical
+            knowledge and applying computing skills to practical
+            challenges that can create meaningful impact.
         </p>
 
     </div>
@@ -926,9 +1082,7 @@
 
     <div class="section-header">
 
-        <h2>
-            Education
-        </h2>
+        <h2>Education</h2>
 
         <div class="line"></div>
 
@@ -942,46 +1096,54 @@
     <div class="education-container">
 
 
-        <!-- PHD -->
-
         <div class="education-card">
 
             <div class="education-icon">
-                🎓
+
+                <svg viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2">
+
+                    <path d="M2 10l10-5 10 5-10 5-10-5z"></path>
+                    <path d="M6 12v5c3 2 9 2 12 0v-5"></path>
+
+                </svg>
+
             </div>
 
             <div class="education-details">
 
-                <h3>
-                    Ph.D. in Computer Science
-                </h3>
+                <h3>Ph.D. in Computer Science</h3>
 
-                <h4>
-                    Oklahoma State University
-                </h4>
+                <h4>Oklahoma State University</h4>
 
-                <p>
-                    Doctoral Student
-                </p>
+                <p>Doctoral Student</p>
 
             </div>
 
         </div>
 
 
-        <!-- MASTER'S -->
-
         <div class="education-card">
 
             <div class="education-icon">
-                🎓
+
+                <svg viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2">
+
+                    <path d="M2 10l10-5 10 5-10 5-10-5z"></path>
+                    <path d="M6 12v5c3 2 9 2 12 0v-5"></path>
+
+                </svg>
+
             </div>
 
             <div class="education-details">
 
-                <h3>
-                    M.Sc. in Computer Science
-                </h3>
+                <h3>M.Sc. in Computer Science</h3>
 
                 <h4>
                     Tai Solarin University of Education
@@ -996,23 +1158,27 @@
         </div>
 
 
-        <!-- BACHELOR'S -->
-
         <div class="education-card">
 
             <div class="education-icon">
-                🎓
+
+                <svg viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2">
+
+                    <path d="M2 10l10-5 10 5-10 5-10-5z"></path>
+                    <path d="M6 12v5c3 2 9 2 12 0v-5"></path>
+
+                </svg>
+
             </div>
 
             <div class="education-details">
 
-                <h3>
-                    B.Sc. in Computer Science
-                </h3>
+                <h3>B.Sc. in Computer Science</h3>
 
-                <h4>
-                    Computer Science
-                </h4>
+                <h4>Computer Science</h4>
 
                 <p>
                     Bachelor of Science in Computer Science
@@ -1036,9 +1202,7 @@
 
     <div class="section-header">
 
-        <h2>
-            Curriculum Vitae
-        </h2>
+        <h2>Curriculum Vitae</h2>
 
         <div class="line"></div>
 
@@ -1051,21 +1215,57 @@
 
             View my curriculum vitae for additional
             information about my academic background,
-            professional experience, skills,
-            and activities.
+            professional experience, skills, and activities.
 
         </p>
 
 
-        <a
-            href="cv.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-primary">
+        <div class="cv-buttons">
 
-            View My CV
 
-        </a>
+            <a
+                href="cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary">
+
+                <svg viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2">
+
+                    <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+
+                </svg>
+
+                View CV
+
+            </a>
+
+
+            <a
+                href="cv.pdf"
+                download="Paul-Omude-CV.pdf"
+                class="btn cv-download">
+
+                <svg viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2">
+
+                    <path d="M12 3v12"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <path d="M5 21h14"></path>
+
+                </svg>
+
+                Download CV
+
+            </a>
+
+
+        </div>
 
     </div>
 
@@ -1080,9 +1280,7 @@
 
     <div class="section-header">
 
-        <h2>
-            Connect With Me
-        </h2>
+        <h2>Connect With Me</h2>
 
         <div class="line"></div>
 
@@ -1110,12 +1308,20 @@
                 class="contact-card">
 
                 <div class="contact-icon">
-                    @
+
+                    <svg viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2">
+
+                        <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+
+                    </svg>
+
                 </div>
 
-                <h3>
-                    Email
-                </h3>
+                <h3>Email</h3>
 
                 <p>
                     omudepaul@gmail.com
@@ -1133,12 +1339,17 @@
                 class="contact-card">
 
                 <div class="contact-icon">
-                    in
+
+                    <svg viewBox="0 0 24 24"
+                         fill="currentColor">
+
+                        <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29zM5.32 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.1 20.45H3.54V8.98H7.1v11.47z"></path>
+
+                    </svg>
+
                 </div>
 
-                <h3>
-                    LinkedIn
-                </h3>
+                <h3>LinkedIn</h3>
 
                 <p>
                     linkedin.com/in/omudepaul
@@ -1156,12 +1367,17 @@
                 class="contact-card">
 
                 <div class="contact-icon">
-                    GH
+
+                    <svg viewBox="0 0 24 24"
+                         fill="currentColor">
+
+                        <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.2c-3.23.7-3.91-1.37-3.91-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.58-.29-5.29-1.29-5.29-5.75 0-1.27.45-2.31 1.19-3.12-.12-.29-.52-1.48.11-3.08 0 0 .97-.31 3.17 1.19A11.05 11.05 0 0 1 12 6.01c.98 0 1.96.13 2.88.39 2.2-1.5 3.17-1.19 3.17-1.19.63 1.6.23 2.79.11 3.08.74.81 1.19 1.85 1.19 3.12 0 4.47-2.72 5.45-5.31 5.74.42.36.79 1.07.79 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7z"></path>
+
+                    </svg>
+
                 </div>
 
-                <h3>
-                    GitHub
-                </h3>
+                <h3>GitHub</h3>
 
                 <p>
                     github.com/omudepaul
@@ -1185,8 +1401,18 @@
 
     <div class="footer-links">
 
-        <a
-            href="mailto:omudepaul@gmail.com">
+
+        <a href="mailto:omudepaul@gmail.com">
+
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2">
+
+                <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+
+            </svg>
 
             Email
 
@@ -1215,12 +1441,12 @@
 
         <a
             href="cv.pdf"
-            target="_blank"
-            rel="noopener noreferrer">
+            target="_blank">
 
             CV
 
         </a>
+
 
     </div>
 
@@ -1230,6 +1456,54 @@
     </p>
 
 </footer>
+
+
+<!-- =========================================
+     MOBILE MENU JAVASCRIPT
+========================================== -->
+
+<script>
+
+    const menuButton =
+        document.getElementById("menuButton");
+
+    const navLinks =
+        document.getElementById("navLinks");
+
+
+    menuButton.addEventListener("click", function () {
+
+        navLinks.classList.toggle("active");
+
+        const isOpen =
+            navLinks.classList.contains("active");
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            isOpen
+        );
+
+    });
+
+
+    document
+        .querySelectorAll(".nav-links a")
+        .forEach(function(link) {
+
+            link.addEventListener("click", function() {
+
+                navLinks.classList.remove("active");
+
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            });
+
+        });
+
+</script>
 
 
 </body>
