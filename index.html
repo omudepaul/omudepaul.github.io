@@ -78,8 +78,7 @@
     <!-- =====================================================
          TWITTER / X
     ====================================================== -->
-    <meta name="twitter:card"
-          content="summary_large_image">
+    <meta name="twitter:card" content="summary_large_image">
 
     <meta name="twitter:title"
           content="Paul Omude | Computer Science">
@@ -121,6 +120,7 @@
     </script>
 
     <style>
+
         /* =====================================================
            GENERAL
         ====================================================== */
@@ -153,11 +153,6 @@
 
         a {
             -webkit-tap-highlight-color: transparent;
-        }
-
-        .section-container {
-            max-width: 1050px;
-            margin: auto;
         }
 
         /* =====================================================
@@ -200,9 +195,9 @@
             justify-content: space-between;
             align-items: center;
 
-            padding: 18px 6%;
+            padding: 18px 5%;
 
-            background: rgba(255, 255, 255, 0.97);
+            background: rgba(255,255,255,0.97);
             backdrop-filter: blur(12px);
 
             border-bottom: 1px solid #e2e8f0;
@@ -221,16 +216,20 @@
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 17px;
+            gap: 15px;
             list-style: none;
         }
 
         .nav-links a {
             position: relative;
+
             color: #475569;
+
             font-size: 13px;
             font-weight: 600;
+
             text-decoration: none;
+
             transition: 0.25s;
         }
 
@@ -244,9 +243,12 @@
             position: absolute;
             left: 0;
             bottom: -6px;
+
             width: 0;
             height: 2px;
+
             background: #2563eb;
+
             transition: width 0.25s;
         }
 
@@ -261,13 +263,19 @@
 
         .menu-button {
             display: none;
+
             width: 44px;
             height: 44px;
+
             align-items: center;
             justify-content: center;
+
             border: 0;
+
             background: transparent;
+
             color: #0f172a;
+
             cursor: pointer;
         }
 
@@ -282,6 +290,7 @@
 
         .hero {
             min-height: 100vh;
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -294,7 +303,7 @@
             background:
                 radial-gradient(
                     circle at 80% 20%,
-                    rgba(37, 99, 235, 0.16),
+                    rgba(37,99,235,0.16),
                     transparent 28%
                 ),
                 linear-gradient(
@@ -330,9 +339,10 @@
             object-position: center top;
 
             border-radius: 22px;
-            border: 4px solid rgba(255, 255, 255, 0.15);
 
-            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+            border: 4px solid rgba(255,255,255,0.15);
+
+            box-shadow: 0 25px 60px rgba(0,0,0,0.45);
 
             transition: 0.3s;
         }
@@ -343,39 +353,51 @@
 
         .intro {
             display: inline-block;
+
             margin-bottom: 18px;
 
             color: #93c5fd;
 
             font-size: 14px;
             font-weight: 700;
+
             letter-spacing: 3px;
+
             text-transform: uppercase;
         }
 
         .hero h1 {
             margin-bottom: 18px;
+
             font-size: clamp(48px, 6vw, 66px);
+
             line-height: 1.08;
         }
 
         .hero h2 {
             margin-bottom: 7px;
+
             color: #e2e8f0;
+
             font-size: 27px;
             font-weight: 400;
         }
 
         .university {
             margin-bottom: 28px;
+
             color: #94a3b8;
+
             font-size: 19px;
         }
 
         .hero-description {
             max-width: 650px;
+
             color: #cbd5e1;
+
             font-size: 18px;
+
             line-height: 1.85;
         }
 
@@ -386,7 +408,9 @@
         .buttons {
             display: flex;
             flex-wrap: wrap;
+
             gap: 10px;
+
             margin-top: 35px;
         }
 
@@ -394,6 +418,7 @@
             min-height: 48px;
 
             display: inline-flex;
+
             align-items: center;
             justify-content: center;
 
@@ -402,6 +427,7 @@
             border-radius: 8px;
 
             font-weight: 600;
+
             text-decoration: none;
 
             transition: 0.25s;
@@ -449,26 +475,33 @@
 
         .section-header h2 {
             margin-bottom: 12px;
+
             color: #0f172a;
+
             font-size: 38px;
         }
 
         .section-header p {
             max-width: 680px;
+
             margin: 15px auto 0;
+
             color: #64748b;
         }
 
         .line {
             width: 60px;
             height: 4px;
+
             margin: auto;
+
             background: #2563eb;
+
             border-radius: 5px;
         }
 
         /* =====================================================
-           PROFESSIONAL SVG ICONS
+           ICONS
         ====================================================== */
 
         .round-icon,
@@ -486,12 +519,14 @@
         .round-icon {
             width: 58px;
             height: 58px;
+
             border-radius: 50%;
         }
 
         .square-icon {
             width: 52px;
             height: 52px;
+
             border-radius: 10px;
         }
 
@@ -511,6 +546,7 @@
 
         .about-content {
             max-width: 850px;
+
             margin: auto;
 
             color: #475569;
@@ -541,35 +577,43 @@
         .education-card {
             display: flex;
             align-items: flex-start;
+
             gap: 25px;
 
             margin-bottom: 20px;
+
             padding: 30px;
 
             background: white;
 
             border: 1px solid #e2e8f0;
+
             border-radius: 12px;
 
-            box-shadow: 0 7px 25px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 7px 25px rgba(0,0,0,0.04);
 
             transition: 0.3s;
         }
 
         .education-card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
         }
 
         .education-details h3 {
             color: #0f172a;
+
             font-size: 21px;
+
             margin-bottom: 4px;
         }
 
         .education-details h4 {
             color: #2563eb;
+
             font-size: 16px;
+
             margin-bottom: 5px;
         }
 
@@ -587,15 +631,19 @@
 
         .experience-container {
             position: relative;
+
             max-width: 950px;
+
             margin: auto;
         }
 
         .experience-container::before {
             content: "";
+
             position: absolute;
 
             left: 28px;
+
             top: 15px;
             bottom: 15px;
 
@@ -608,6 +656,7 @@
             position: relative;
 
             display: grid;
+
             grid-template-columns: 60px 1fr;
 
             gap: 25px;
@@ -617,21 +666,24 @@
 
         .experience-marker {
             position: relative;
+
             z-index: 2;
 
             width: 58px;
             height: 58px;
 
             display: flex;
+
             align-items: center;
             justify-content: center;
 
             background: #2563eb;
+
             color: white;
 
             border-radius: 50%;
 
-            box-shadow: 0 7px 20px rgba(37, 99, 235, 0.22);
+            box-shadow: 0 7px 20px rgba(37,99,235,0.22);
         }
 
         .experience-marker svg {
@@ -645,6 +697,7 @@
             background: #f8fafc;
 
             border: 1px solid #e2e8f0;
+
             border-radius: 12px;
 
             transition: 0.3s;
@@ -652,18 +705,23 @@
 
         .experience-content:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+
+            box-shadow: 0 12px 30px rgba(0,0,0,0.07);
         }
 
         .experience-content h3 {
             margin-bottom: 4px;
+
             color: #0f172a;
+
             font-size: 22px;
         }
 
         .experience-organization {
             color: #2563eb;
+
             font-weight: 600;
+
             margin-bottom: 4px;
         }
 
@@ -673,11 +731,13 @@
             margin-bottom: 15px;
 
             color: #64748b;
+
             font-size: 14px;
         }
 
         .experience-content ul {
             padding-left: 20px;
+
             color: #475569;
         }
 
@@ -695,9 +755,11 @@
 
         .teaching-container {
             max-width: 1050px;
+
             margin: auto;
 
             display: grid;
+
             grid-template-columns: repeat(3, 1fr);
 
             gap: 22px;
@@ -709,9 +771,10 @@
             background: white;
 
             border: 1px solid #e2e8f0;
+
             border-radius: 12px;
 
-            box-shadow: 0 7px 25px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 7px 25px rgba(0,0,0,0.04);
 
             transition: 0.3s;
         }
@@ -719,7 +782,7 @@
         .teaching-card:hover {
             transform: translateY(-5px);
 
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
         }
 
         .teaching-card .square-icon {
@@ -757,18 +820,125 @@
         }
 
         /* =====================================================
+           PUBLICATIONS
+        ====================================================== */
+
+        .publications {
+            background: white;
+        }
+
+        .publications-container {
+            max-width: 1000px;
+
+            margin: auto;
+        }
+
+        .publication-card {
+            position: relative;
+
+            display: grid;
+
+            grid-template-columns: 65px 1fr;
+
+            gap: 25px;
+
+            margin-bottom: 24px;
+
+            padding: 32px;
+
+            background: #f8fafc;
+
+            border: 1px solid #e2e8f0;
+
+            border-radius: 14px;
+
+            transition: 0.3s;
+        }
+
+        .publication-card:hover {
+            transform: translateY(-4px);
+
+            box-shadow: 0 14px 35px rgba(0,0,0,0.07);
+        }
+
+        .publication-number {
+            width: 52px;
+            height: 52px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            background: #2563eb;
+
+            color: white;
+
+            border-radius: 12px;
+
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .publication-details h3 {
+            margin-bottom: 10px;
+
+            color: #0f172a;
+
+            font-size: 21px;
+
+            line-height: 1.5;
+        }
+
+        .publication-author {
+            margin-bottom: 5px;
+
+            color: #2563eb;
+
+            font-weight: 600;
+        }
+
+        .publication-type {
+            display: inline-block;
+
+            margin-top: 8px;
+
+            padding: 6px 12px;
+
+            background: #dbeafe;
+
+            color: #1d4ed8;
+
+            border-radius: 20px;
+
+            font-size: 13px;
+
+            font-weight: 600;
+        }
+
+        .publication-note {
+            margin-top: 13px;
+
+            color: #64748b;
+
+            font-size: 14px;
+        }
+
+        /* =====================================================
            SKILLS
         ====================================================== */
 
         .skills {
-            background: white;
+            background: #f8fafc;
         }
 
         .skills-container {
             max-width: 1050px;
+
             margin: auto;
 
             display: grid;
+
             grid-template-columns: repeat(3, 1fr);
 
             gap: 22px;
@@ -777,10 +947,13 @@
         .skill-card {
             padding: 32px 25px;
 
-            background: #f8fafc;
+            background: white;
 
             border: 1px solid #e2e8f0;
+
             border-radius: 12px;
+
+            box-shadow: 0 7px 25px rgba(0,0,0,0.04);
 
             transition: 0.3s;
         }
@@ -788,7 +961,7 @@
         .skill-card:hover {
             transform: translateY(-5px);
 
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
         }
 
         .skill-card .square-icon {
@@ -805,21 +978,25 @@
 
         .skill-list {
             display: flex;
+
             flex-wrap: wrap;
+
             gap: 8px;
         }
 
         .skill-tag {
             padding: 7px 11px;
 
-            background: white;
+            background: #f1f5f9;
 
             color: #475569;
 
             border: 1px solid #e2e8f0;
+
             border-radius: 20px;
 
             font-size: 13px;
+
             font-weight: 600;
         }
 
@@ -828,27 +1005,29 @@
         ====================================================== */
 
         .awards {
-            background: #f8fafc;
+            background: white;
         }
 
         .awards-container {
             max-width: 950px;
+
             margin: auto;
         }
 
         .award-card {
             display: flex;
+
             align-items: flex-start;
+
             gap: 25px;
 
             padding: 32px;
 
-            background: white;
+            background: #f8fafc;
 
             border: 1px solid #e2e8f0;
-            border-radius: 12px;
 
-            box-shadow: 0 7px 25px rgba(0, 0, 0, 0.04);
+            border-radius: 12px;
 
             transition: 0.3s;
         }
@@ -856,7 +1035,7 @@
         .award-card:hover {
             transform: translateY(-4px);
 
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
         }
 
         .award-details h3 {
@@ -880,30 +1059,35 @@
         }
 
         /* =====================================================
-           PROFESSIONAL MEMBERSHIPS
+           MEMBERSHIPS
         ====================================================== */
 
         .memberships {
-            background: white;
+            background: #f8fafc;
         }
 
         .memberships-container {
             max-width: 950px;
+
             margin: auto;
         }
 
         .membership-card {
             display: flex;
+
             align-items: flex-start;
 
             gap: 25px;
 
             padding: 35px;
 
-            background: #f8fafc;
+            background: white;
 
             border: 1px solid #e2e8f0;
+
             border-radius: 12px;
+
+            box-shadow: 0 7px 25px rgba(0,0,0,0.04);
 
             transition: 0.3s;
         }
@@ -911,7 +1095,7 @@
         .membership-card:hover {
             transform: translateY(-4px);
 
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
         }
 
         .membership-icon {
@@ -921,15 +1105,18 @@
             flex-shrink: 0;
 
             display: flex;
+
             align-items: center;
             justify-content: center;
 
             background: #2563eb;
+
             color: white;
 
             border-radius: 50%;
 
             font-size: 18px;
+
             font-weight: 700;
         }
 
@@ -974,25 +1161,32 @@
         ====================================================== */
 
         .cv-section {
-            background: #f8fafc;
+            background: white;
+
             text-align: center;
         }
 
         .cv-container {
             max-width: 750px;
+
             margin: auto;
         }
 
         .cv-container p {
             margin-bottom: 30px;
+
             color: #475569;
+
             font-size: 18px;
         }
 
         .cv-buttons {
             display: flex;
+
             justify-content: center;
+
             flex-wrap: wrap;
+
             gap: 12px;
         }
 
@@ -1001,34 +1195,42 @@
         ====================================================== */
 
         .contact {
-            background: white;
+            background: #f8fafc;
+
             text-align: center;
         }
 
         .contact-content {
             max-width: 950px;
+
             margin: auto;
         }
 
         .contact-intro {
             max-width: 700px;
+
             margin: 0 auto 40px;
+
             color: #475569;
+
             font-size: 18px;
         }
 
         .contact-grid {
             display: grid;
+
             grid-template-columns: repeat(3, 1fr);
+
             gap: 20px;
         }
 
         .contact-card {
             padding: 35px 20px;
 
-            background: #f8fafc;
+            background: white;
 
             border: 1px solid #e2e8f0;
+
             border-radius: 12px;
 
             text-decoration: none;
@@ -1039,7 +1241,7 @@
         .contact-card:hover {
             transform: translateY(-6px);
 
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.09);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.09);
         }
 
         .contact-card .round-icon {
@@ -1048,12 +1250,15 @@
 
         .contact-card h3 {
             margin-bottom: 8px;
+
             color: #0f172a;
         }
 
         .contact-card p {
             color: #64748b;
+
             font-size: 14px;
+
             word-break: break-word;
         }
 
@@ -1073,7 +1278,9 @@
 
         .footer-links {
             display: flex;
+
             justify-content: center;
+
             flex-wrap: wrap;
 
             gap: 22px;
@@ -1098,10 +1305,10 @@
         }
 
         /* =====================================================
-           RESPONSIVE DESIGN
+           RESPONSIVE
         ====================================================== */
 
-        @media (max-width: 1100px) {
+        @media (max-width: 1200px) {
 
             .menu-button {
                 display: flex;
@@ -1118,6 +1325,7 @@
                 display: none;
 
                 flex-direction: column;
+
                 align-items: stretch;
 
                 gap: 0;
@@ -1126,7 +1334,7 @@
 
                 background: white;
 
-                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+                box-shadow: 0 10px 25px rgba(0,0,0,0.08);
             }
 
             .nav-links.active {
@@ -1150,17 +1358,20 @@
             .nav-links a::after {
                 display: none;
             }
+
         }
 
         @media (max-width: 900px) {
 
             .hero-container {
                 grid-template-columns: 300px 1fr;
+
                 gap: 45px;
             }
 
             .hero-photo img {
                 max-width: 300px;
+
                 height: 370px;
             }
 
@@ -1171,9 +1382,12 @@
 
             .contact-grid {
                 grid-template-columns: 1fr;
+
                 max-width: 600px;
+
                 margin: auto;
             }
+
         }
 
         @media (max-width: 760px) {
@@ -1188,6 +1402,7 @@
 
             .hero-container {
                 grid-template-columns: 1fr;
+
                 gap: 35px;
             }
 
@@ -1197,11 +1412,13 @@
 
             .hero-text {
                 order: 2;
+
                 text-align: center;
             }
 
             .hero-photo img {
                 width: 245px;
+
                 height: 295px;
             }
 
@@ -1219,6 +1436,7 @@
 
             .hero-description {
                 margin: auto;
+
                 font-size: 16px;
             }
 
@@ -1238,7 +1456,9 @@
             .award-card,
             .membership-card {
                 flex-direction: column;
+
                 align-items: center;
+
                 text-align: center;
             }
 
@@ -1263,14 +1483,22 @@
                 grid-template-columns: 1fr;
             }
 
+            .publication-card {
+                grid-template-columns: 1fr;
+
+                text-align: left;
+            }
+
             .cv-buttons {
                 flex-direction: column;
+
                 align-items: center;
             }
 
             .cv-buttons .btn {
                 width: 220px;
             }
+
         }
 
         /* =====================================================
@@ -1288,6 +1516,7 @@
             *::after {
                 transition-duration: 0.01ms !important;
             }
+
         }
 
     </style>
@@ -1298,7 +1527,9 @@
 
 <a class="skip-link"
    href="#main-content">
+
     Skip to main content
+
 </a>
 
 
@@ -1331,6 +1562,7 @@
             <path d="M4 18h16"></path>
 
         </svg>
+
     </button>
 
 
@@ -1373,6 +1605,13 @@
         </li>
 
         <li>
+            <a href="#publications"
+               class="nav-link">
+                Publications
+            </a>
+        </li>
+
+        <li>
             <a href="#skills"
                class="nav-link">
                 Skills
@@ -1408,6 +1647,7 @@
         </li>
 
     </ul>
+
 </nav>
 
 
@@ -1674,7 +1914,7 @@
 
 
 <!-- =====================================================
-     PROFESSIONAL EXPERIENCE
+     EXPERIENCE
 ====================================================== -->
 
 <section class="experience"
@@ -1983,7 +2223,110 @@
 
 
 <!-- =====================================================
-     TECHNICAL SKILLS
+     SELECTED PUBLICATIONS
+====================================================== -->
+
+<section class="publications"
+         id="publications">
+
+    <div class="section-header">
+
+        <h2>
+            Selected Publications
+        </h2>
+
+        <div class="line"></div>
+
+        <p>
+            Selected scholarly publications and collaborative
+            academic work.
+        </p>
+
+    </div>
+
+
+    <div class="publications-container">
+
+
+        <!-- PUBLICATION 1 -->
+
+        <article class="publication-card">
+
+            <div class="publication-number">
+                01
+            </div>
+
+
+            <div class="publication-details">
+
+                <h3>
+                    Q-MeLoNet: A Quantum-Enhanced Transformer
+                    Framework for Adolescent Mental Dysfunction
+                    Detection from fNIRS Signals
+                </h3>
+
+                <p class="publication-author">
+                    Co-authored by Paul Omude
+                </p>
+
+                <span class="publication-type">
+                    Publication
+                </span>
+
+                <p class="publication-note">
+                    Full citation, publication venue,
+                    year, and DOI/link will be added
+                    when available.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- PUBLICATION 2 -->
+
+        <article class="publication-card">
+
+            <div class="publication-number">
+                02
+            </div>
+
+
+            <div class="publication-details">
+
+                <h3>
+                    Deep Learning Approaches for Automated
+                    Medical Image Diagnosis: A Focus on
+                    Explainability (XAI)
+                </h3>
+
+                <p class="publication-author">
+                    Co-authored by Paul Omude
+                </p>
+
+                <span class="publication-type">
+                    Publication
+                </span>
+
+                <p class="publication-note">
+                    Full citation, publication venue,
+                    year, and DOI/link will be added
+                    when available.
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SKILLS
 ====================================================== -->
 
 <section class="skills"
@@ -2050,13 +2393,8 @@
                      stroke="currentColor"
                      stroke-width="2">
 
-                    <circle cx="12"
-                            cy="12"
-                            r="9"></circle>
-
+                    <circle cx="12" cy="12" r="9"></circle>
                     <path d="M3 12h18"></path>
-                    <path d="M12 3c3 3 3 15 0 18"></path>
-                    <path d="M12 3c-3 3-3 15 0 18"></path>
 
                 </svg>
 
@@ -2087,16 +2425,9 @@
                      stroke="currentColor"
                      stroke-width="2">
 
-                    <circle cx="6"
-                            cy="6"
-                            r="2"></circle>
-
-                    <circle cx="18"
-                            cy="18"
-                            r="2"></circle>
-
+                    <circle cx="6" cy="6" r="2"></circle>
+                    <circle cx="18" cy="18" r="2"></circle>
                     <path d="M8 6h4a4 4 0 014 4v6"></path>
-                    <path d="M6 8v8a2 2 0 002 2h8"></path>
 
                 </svg>
 
@@ -2127,12 +2458,7 @@
                      stroke="currentColor"
                      stroke-width="2">
 
-                    <rect x="4"
-                          y="4"
-                          width="16"
-                          height="16"
-                          rx="2"></rect>
-
+                    <rect x="4" y="4" width="16" height="16" rx="2"></rect>
                     <path d="M8 8h8v8H8z"></path>
 
                 </svg>
@@ -2212,10 +2538,7 @@
                      stroke="currentColor"
                      stroke-width="2">
 
-                    <circle cx="12"
-                            cy="8"
-                            r="4"></circle>
-
+                    <circle cx="12" cy="8" r="4"></circle>
                     <path d="M4 21c1-5 4-7 8-7s7 2 8 7"></path>
 
                 </svg>
@@ -2244,7 +2567,7 @@
 
 
 <!-- =====================================================
-     AWARDS & HONORS
+     AWARDS
 ====================================================== -->
 
 <section class="awards"
@@ -2281,7 +2604,6 @@
                     <path d="M16 6h4c0 4-2 6-5 6"></path>
                     <path d="M12 12v5"></path>
                     <path d="M8 21h8"></path>
-                    <path d="M9 17h6"></path>
 
                 </svg>
 
@@ -2314,7 +2636,7 @@
 
 
 <!-- =====================================================
-     PROFESSIONAL MEMBERSHIPS
+     MEMBERSHIPS
 ====================================================== -->
 
 <section class="memberships"
@@ -2382,7 +2704,7 @@
 
 
 <!-- =====================================================
-     CURRICULUM VITAE
+     CV
 ====================================================== -->
 
 <section class="cv-section"
@@ -2405,7 +2727,7 @@
             View my curriculum vitae for additional
             information about my academic background,
             professional experience, technical skills,
-            and activities.
+            publications, and activities.
         </p>
 
 
@@ -2468,8 +2790,6 @@
         <div class="contact-grid">
 
 
-            <!-- EMAIL -->
-
             <a href="mailto:omudepaul@gmail.com"
                class="contact-card"
                data-ga-event="email_click">
@@ -2504,8 +2824,6 @@
             </a>
 
 
-            <!-- LINKEDIN -->
-
             <a href="https://www.linkedin.com/in/omudepaul"
                target="_blank"
                rel="noopener noreferrer"
@@ -2515,8 +2833,7 @@
                 <div class="round-icon">
 
                     <svg viewBox="0 0 24 24"
-                         fill="currentColor"
-                         aria-hidden="true">
+                         fill="currentColor">
 
                         <path d="M6 8H3v13h3V8zm.2-4.1C6.2 2.9 5.4 2 4.5 2S2.8 2.9 2.8 3.9 3.6 5.7 4.5 5.7s1.7-.8 1.7-1.8zM21 13.5c0-4-2.1-5.8-4.9-5.8-2.3 0-3.3 1.3-3.9 2.2V8H9.1v13h3.1v-6.4c0-1.7.3-3.4 2.5-3.4 2.1 0 2.2 2 2.2 3.5V21H20v-7.5h1z"></path>
 
@@ -2535,8 +2852,6 @@
             </a>
 
 
-            <!-- GITHUB -->
-
             <a href="https://github.com/omudepaul"
                target="_blank"
                rel="noopener noreferrer"
@@ -2546,8 +2861,7 @@
                 <div class="round-icon">
 
                     <svg viewBox="0 0 24 24"
-                         fill="currentColor"
-                         aria-hidden="true">
+                         fill="currentColor">
 
                         <path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.8 9.7.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.1 9.1 0 015 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.6 5 .4.3.7 1 .7 2v3c0 .3.2.6.7.5 4-1.4 6.8-5.2 6.8-9.7C22 6.6 17.5 2 12 2z"></path>
 
@@ -2640,9 +2954,7 @@
 
 <script>
 
-    /* =====================================================
-       MOBILE MENU
-    ====================================================== */
+    /* MOBILE MENU */
 
     const menuButton =
         document.getElementById("menuButton");
@@ -2678,9 +2990,7 @@
                     "click",
                     function () {
 
-                        navLinks.classList.remove(
-                            "active"
-                        );
+                        navLinks.classList.remove("active");
 
                         menuButton.setAttribute(
                             "aria-expanded",
@@ -2694,9 +3004,7 @@
         );
 
 
-    /* =====================================================
-       ACTIVE NAVIGATION
-    ====================================================== */
+    /* ACTIVE NAVIGATION */
 
     const sections =
         document.querySelectorAll(
@@ -2770,9 +3078,7 @@
     );
 
 
-    /* =====================================================
-       AUTOMATIC YEAR
-    ====================================================== */
+    /* AUTOMATIC YEAR */
 
     document.getElementById(
         "year"
@@ -2780,9 +3086,7 @@
         new Date().getFullYear();
 
 
-    /* =====================================================
-       GOOGLE ANALYTICS CUSTOM EVENTS
-    ====================================================== */
+    /* GOOGLE ANALYTICS CUSTOM EVENTS */
 
     document
         .querySelectorAll(
@@ -2840,4 +3144,5 @@
 
 
 </body>
+
 </html>
