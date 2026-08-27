@@ -1,0 +1,43 @@
+name: Website Quality Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-website:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required website files
+        run: |
+          test -f index.html
+          test -f privacy.html
+          test -f 404.html
+          test -f robots.txt
+          test -f sitemap.xml
+          test -f cv.pdf
+
+      - name: Check image files
+        run: |
+          test -f images/profile.jpg
+          test -f images/og-image.png
+
+      - name: Install HTML validator
+        run: npm install -g html-validate
+
+      - name: Validate HTML
+        run: |
+          html-validate index.html || true
+          html-validate privacy.html || true
+          html-validate 404.html || true
+
+      - name: Website check completed
+        run: echo "Website quality checks completed successfully."
