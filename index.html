@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paul Omude | Computer Science</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            width: 100%;
+            background: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #0f172a;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #475569;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #2563eb;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 120px 20px 60px;
+            background:
+                linear-gradient(
+                    rgba(15,23,42,0.92),
+                    rgba(15,23,42,0.92)
+                );
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 26px;
+            font-weight: 400;
+            color: #cbd5e1;
+            margin-bottom: 10px;
+        }
+
+        .hero h3 {
+            font-size: 18px;
+            font-weight: 400;
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 650px;
+            margin: auto;
+            color: #e2e8f0;
+        }
+
+        /* BUTTONS */
+
+        .buttons {
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 28px;
+            margin: 7px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .primary:hover {
+            background: #1d4ed8;
+        }
+
+        .secondary {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .secondary:hover {
+            background: white;
+            color: #0f172a;
+        }
+
+        /* ABOUT */
+
+        section {
+            padding: 90px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #0f172a;
+        }
+
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+            color: #475569;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            background: #f1f5f9;
+            text-align: center;
+        }
+
+        .contact p {
+            margin-bottom: 25px;
+            color: #475569;
+            font-size: 18px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            nav ul {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+
+            section {
+                padding: 70px 25px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <div class="logo">Paul Omude</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li>
+                <a href="https://github.com/omudepaul"
+                   target="_blank">
+                   GitHub
+                </a>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- HOME -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Paul Omude</h1>
+
+            <h2>Ph.D. Student in Computer Science</h2>
+
+            <h3>Oklahoma State University</h3>
+
+            <p>
+                Welcome to my personal website.
+                I am passionate about computer science,
+                technology, innovation, and building solutions
+                that address real-world problems.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#about"
+                   class="btn primary">
+                   About Me
+                </a>
+
+                <a href="https://github.com/omudepaul"
+                   target="_blank"
+                   class="btn secondary">
+                   GitHub
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-content">
+
+            <p>
+                I am a Ph.D. student in Computer Science at
+                Oklahoma State University.
+                My academic journey is driven by curiosity,
+                continuous learning, and an interest in using
+                computing technologies to solve meaningful
+                problems.
+            </p>
+
+            <br>
+
+            <p>
+                This website serves as my personal academic and
+                professional homepage. Additional information
+                about my work, projects, publications, and
+                professional activities will be added over time.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <h2 class="section-title">Contact</h2>
+
+        <p>
+            Feel free to connect with me through GitHub.
+        </p>
+
+        <a href="https://github.com/omudepaul"
+           target="_blank"
+           class="btn primary">
+           Visit My GitHub
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Paul Omude. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
