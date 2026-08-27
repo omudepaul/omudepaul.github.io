@@ -4,24 +4,6 @@
 <head>
 
     <!-- =====================================================
-         GOOGLE ANALYTICS 4
-    ====================================================== -->
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZBSQG29DQ"></script>
-
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-        gtag('config', 'G-QZBSQG29DQ');
-    </script>
-
-
-    <!-- =====================================================
          BASIC SETTINGS
     ====================================================== -->
 
@@ -34,6 +16,27 @@
           content="#0f172a">
 
     <title>Paul Omude | Computer Science</title>
+
+
+    <!-- =====================================================
+         GOOGLE ANALYTICS 4
+    ====================================================== -->
+
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-QZBSQG29DQ">
+    </script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag("js", new Date());
+
+        gtag("config", "G-QZBSQG29DQ");
+    </script>
 
 
     <!-- =====================================================
@@ -128,12 +131,10 @@
         "url": "https://omudepaul.github.io/",
         "image": "https://omudepaul.github.io/images/profile.jpg",
         "jobTitle": "Ph.D. Student in Computer Science",
-
         "affiliation": {
             "@type": "CollegeOrUniversity",
             "name": "Oklahoma State University"
         },
-
         "sameAs": [
             "https://github.com/omudepaul",
             "https://www.linkedin.com/in/omudepaul"
@@ -160,17 +161,13 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-
             background: #ffffff;
-
             color: #1e293b;
-
             line-height: 1.7;
         }
 
         section {
             padding: 100px 8%;
-
             scroll-margin-top: 80px;
         }
 
@@ -189,20 +186,13 @@
 
         .skip-link {
             position: absolute;
-
             top: -70px;
             left: 20px;
-
             padding: 12px 20px;
-
             background: #2563eb;
-
             color: white;
-
             text-decoration: none;
-
             border-radius: 6px;
-
             z-index: 5000;
         }
 
@@ -213,7 +203,6 @@
         a:focus-visible,
         button:focus-visible {
             outline: 3px solid #60a5fa;
-
             outline-offset: 4px;
         }
 
@@ -224,61 +213,40 @@
 
         nav {
             position: fixed;
-
             top: 0;
             left: 0;
-
             width: 100%;
-
             display: flex;
-
             justify-content: space-between;
             align-items: center;
-
             padding: 18px 8%;
-
-            background: rgba(255,255,255,0.97);
-
+            background: rgba(255, 255, 255, 0.97);
             backdrop-filter: blur(12px);
-
             border-bottom: 1px solid #e2e8f0;
-
             z-index: 1000;
         }
 
         .logo {
             color: #0f172a;
-
             font-size: 22px;
-
             font-weight: 700;
-
             text-decoration: none;
-
             white-space: nowrap;
         }
 
         .nav-links {
             display: flex;
-
             align-items: center;
-
-            gap: 23px;
-
+            gap: 20px;
             list-style: none;
         }
 
         .nav-links a {
             position: relative;
-
             color: #475569;
-
             font-size: 14px;
-
             font-weight: 600;
-
             text-decoration: none;
-
             transition: 0.25s;
         }
 
@@ -289,17 +257,12 @@
 
         .nav-links a::after {
             content: "";
-
             position: absolute;
-
             left: 0;
             bottom: -6px;
-
             width: 0;
             height: 2px;
-
             background: #2563eb;
-
             transition: width 0.25s;
         }
 
@@ -315,19 +278,13 @@
 
         .menu-button {
             display: none;
-
             width: 44px;
             height: 44px;
-
             align-items: center;
             justify-content: center;
-
             border: 0;
-
             background: transparent;
-
             color: #0f172a;
-
             cursor: pointer;
         }
 
@@ -343,21 +300,17 @@
 
         .hero {
             min-height: 100vh;
-
             display: flex;
-
             align-items: center;
             justify-content: center;
-
             padding-top: 130px;
             padding-bottom: 80px;
-
             color: white;
 
             background:
                 radial-gradient(
                     circle at 80% 20%,
-                    rgba(37,99,235,0.16),
+                    rgba(37, 99, 235, 0.16),
                     transparent 28%
                 ),
                 linear-gradient(
@@ -370,45 +323,27 @@
 
         .hero-container {
             width: 100%;
-
             max-width: 1150px;
-
             display: grid;
-
             grid-template-columns: 380px 1fr;
-
             align-items: center;
-
             gap: 75px;
         }
 
-
-        /* =====================================================
-           PHOTO
-        ====================================================== */
-
         .hero-photo {
             display: flex;
-
             justify-content: center;
         }
 
         .hero-photo img {
             width: 100%;
-
             max-width: 360px;
-
             height: 440px;
-
             object-fit: cover;
             object-position: center top;
-
             border-radius: 22px;
-
-            border: 4px solid rgba(255,255,255,0.15);
-
-            box-shadow: 0 25px 60px rgba(0,0,0,0.45);
-
+            border: 4px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
             transition: 0.3s;
         }
 
@@ -416,60 +351,39 @@
             transform: translateY(-5px);
         }
 
-
-        /* =====================================================
-           HERO TEXT
-        ====================================================== */
-
         .intro {
             display: inline-block;
-
             margin-bottom: 18px;
-
             color: #93c5fd;
-
             font-size: 14px;
-
             font-weight: 700;
-
             letter-spacing: 3px;
-
             text-transform: uppercase;
         }
 
         .hero h1 {
             margin-bottom: 18px;
-
             font-size: clamp(48px, 6vw, 66px);
-
             line-height: 1.08;
         }
 
         .hero h2 {
             margin-bottom: 7px;
-
             color: #e2e8f0;
-
             font-size: 27px;
-
             font-weight: 400;
         }
 
         .university {
             margin-bottom: 28px;
-
             color: #94a3b8;
-
             font-size: 19px;
         }
 
         .hero-description {
             max-width: 650px;
-
             color: #cbd5e1;
-
             font-size: 18px;
-
             line-height: 1.85;
         }
 
@@ -480,68 +394,51 @@
 
         .buttons {
             display: flex;
-
             flex-wrap: wrap;
-
             gap: 10px;
-
             margin-top: 35px;
         }
 
         .btn {
             min-height: 48px;
-
             display: inline-flex;
-
             align-items: center;
             justify-content: center;
-
             padding: 12px 24px;
-
             border-radius: 8px;
-
             font-weight: 600;
-
             text-decoration: none;
-
             transition: 0.25s;
         }
 
         .btn-primary {
             background: #2563eb;
-
             color: white;
         }
 
         .btn-primary:hover {
             background: #1d4ed8;
-
             transform: translateY(-2px);
         }
 
         .btn-outline {
             color: white;
-
             border: 2px solid #cbd5e1;
         }
 
         .btn-outline:hover {
             background: white;
-
             color: #0f172a;
-
             transform: translateY(-2px);
         }
 
         .btn-dark {
             background: #0f172a;
-
             color: white;
         }
 
         .btn-dark:hover {
             background: #1e293b;
-
             transform: translateY(-2px);
         }
 
@@ -552,35 +449,26 @@
 
         .section-header {
             margin-bottom: 55px;
-
             text-align: center;
         }
 
         .section-header h2 {
             margin-bottom: 12px;
-
             color: #0f172a;
-
             font-size: 38px;
         }
 
         .section-header p {
             max-width: 680px;
-
             margin: 15px auto 0;
-
             color: #64748b;
         }
 
         .line {
             width: 60px;
-
             height: 4px;
-
             margin: auto;
-
             background: #2563eb;
-
             border-radius: 5px;
         }
 
@@ -595,15 +483,10 @@
 
         .about-content {
             max-width: 850px;
-
             margin: auto;
-
             color: #475569;
-
             font-size: 18px;
-
             line-height: 1.9;
-
             text-align: center;
         }
 
@@ -622,69 +505,48 @@
 
         .education-container {
             max-width: 950px;
-
             margin: auto;
         }
 
         .education-card {
             display: flex;
-
             align-items: flex-start;
-
             gap: 25px;
-
             margin-bottom: 20px;
-
             padding: 30px;
-
             background: white;
-
             border: 1px solid #e2e8f0;
-
             border-radius: 12px;
-
-            box-shadow: 0 7px 25px rgba(0,0,0,0.04);
-
+            box-shadow: 0 7px 25px rgba(0, 0, 0, 0.04);
             transition: 0.3s;
         }
 
         .education-card:hover {
             transform: translateY(-4px);
-
-            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
         }
 
         .education-icon {
             width: 58px;
             height: 58px;
-
             flex-shrink: 0;
-
             display: flex;
-
             align-items: center;
             justify-content: center;
-
             background: #eff6ff;
-
             border-radius: 50%;
-
             font-size: 25px;
         }
 
         .education-details h3 {
             color: #0f172a;
-
             font-size: 21px;
-
             margin-bottom: 4px;
         }
 
         .education-details h4 {
             color: #2563eb;
-
             font-size: 16px;
-
             margin-bottom: 5px;
         }
 
@@ -703,110 +565,77 @@
 
         .experience-container {
             position: relative;
-
             max-width: 950px;
-
             margin: auto;
         }
 
         .experience-container::before {
             content: "";
-
             position: absolute;
-
             left: 28px;
-
             top: 15px;
             bottom: 15px;
-
             width: 2px;
-
             background: #dbeafe;
         }
 
         .experience-card {
             position: relative;
-
             display: grid;
-
             grid-template-columns: 60px 1fr;
-
             gap: 25px;
-
             margin-bottom: 30px;
         }
 
         .experience-marker {
             position: relative;
-
             z-index: 2;
-
             width: 58px;
             height: 58px;
-
             display: flex;
-
             align-items: center;
             justify-content: center;
-
             background: #2563eb;
-
             color: white;
-
             border-radius: 50%;
-
             font-size: 22px;
-
-            box-shadow: 0 7px 20px rgba(37,99,235,0.22);
+            box-shadow: 0 7px 20px rgba(37, 99, 235, 0.22);
         }
 
         .experience-content {
             padding: 30px;
-
             background: #f8fafc;
-
             border: 1px solid #e2e8f0;
-
             border-radius: 12px;
-
             transition: 0.3s;
         }
 
         .experience-content:hover {
             transform: translateY(-3px);
-
-            box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
         }
 
         .experience-content h3 {
             margin-bottom: 4px;
-
             color: #0f172a;
-
             font-size: 22px;
         }
 
         .experience-organization {
             color: #2563eb;
-
             font-weight: 600;
-
             margin-bottom: 4px;
         }
 
         .experience-period {
             display: inline-block;
-
             margin-bottom: 15px;
-
             color: #64748b;
-
             font-size: 14px;
         }
 
         .experience-content ul {
             padding-left: 20px;
-
             color: #475569;
         }
 
@@ -825,84 +654,117 @@
 
         .skills-container {
             max-width: 1050px;
-
             margin: auto;
-
             display: grid;
-
             grid-template-columns: repeat(3, 1fr);
-
             gap: 22px;
         }
 
         .skill-card {
             padding: 32px 25px;
-
             background: white;
-
             border: 1px solid #e2e8f0;
-
             border-radius: 12px;
-
-            box-shadow: 0 7px 25px rgba(0,0,0,0.04);
-
+            box-shadow: 0 7px 25px rgba(0, 0, 0, 0.04);
             transition: 0.3s;
         }
 
         .skill-card:hover {
             transform: translateY(-5px);
-
-            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
         }
 
         .skill-icon {
             width: 52px;
             height: 52px;
-
             display: flex;
-
             align-items: center;
             justify-content: center;
-
             margin-bottom: 18px;
-
             background: #eff6ff;
-
             border-radius: 10px;
-
             font-size: 23px;
         }
 
         .skill-card h3 {
             margin-bottom: 15px;
-
             color: #0f172a;
-
             font-size: 20px;
         }
 
         .skill-list {
             display: flex;
-
             flex-wrap: wrap;
-
             gap: 8px;
         }
 
         .skill-tag {
             padding: 7px 11px;
-
             background: #f1f5f9;
-
             color: #475569;
-
             border: 1px solid #e2e8f0;
-
             border-radius: 20px;
-
             font-size: 13px;
-
             font-weight: 600;
+        }
+
+
+        /* =====================================================
+           AWARDS
+        ====================================================== */
+
+        .awards {
+            background: white;
+        }
+
+        .awards-container {
+            max-width: 950px;
+            margin: auto;
+        }
+
+        .award-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 25px;
+            padding: 32px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            box-shadow: 0 7px 25px rgba(0, 0, 0, 0.04);
+            transition: 0.3s;
+        }
+
+        .award-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .award-icon {
+            width: 58px;
+            height: 58px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eff6ff;
+            border-radius: 50%;
+            font-size: 25px;
+        }
+
+        .award-details h3 {
+            color: #0f172a;
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        .award-details h4 {
+            color: #2563eb;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .award-details p {
+            color: #64748b;
         }
 
 
@@ -911,32 +773,25 @@
         ====================================================== */
 
         .cv-section {
-            background: white;
-
+            background: #f8fafc;
             text-align: center;
         }
 
         .cv-container {
             max-width: 750px;
-
             margin: auto;
         }
 
         .cv-container p {
             margin-bottom: 30px;
-
             color: #475569;
-
             font-size: 18px;
         }
 
         .cv-buttons {
             display: flex;
-
             justify-content: center;
-
             flex-wrap: wrap;
-
             gap: 12px;
         }
 
@@ -946,90 +801,65 @@
         ====================================================== */
 
         .contact {
-            background: #f8fafc;
-
+            background: white;
             text-align: center;
         }
 
         .contact-content {
             max-width: 950px;
-
             margin: auto;
         }
 
         .contact-intro {
             max-width: 700px;
-
             margin: 0 auto 40px;
-
             color: #475569;
-
             font-size: 18px;
         }
 
         .contact-grid {
             display: grid;
-
             grid-template-columns: repeat(3, 1fr);
-
             gap: 20px;
         }
 
         .contact-card {
             padding: 35px 20px;
-
-            background: white;
-
+            background: #f8fafc;
             border: 1px solid #e2e8f0;
-
             border-radius: 12px;
-
-            box-shadow: 0 7px 25px rgba(0,0,0,0.05);
-
+            box-shadow: 0 7px 25px rgba(0, 0, 0, 0.05);
             text-decoration: none;
-
             transition: 0.3s;
         }
 
         .contact-card:hover {
             transform: translateY(-6px);
-
-            box-shadow: 0 15px 35px rgba(0,0,0,0.09);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.09);
         }
 
         .contact-icon {
             width: 58px;
             height: 58px;
-
             display: flex;
-
             align-items: center;
             justify-content: center;
-
             margin: 0 auto 17px;
-
             background: #eff6ff;
-
             color: #2563eb;
-
             border-radius: 50%;
-
             font-size: 20px;
-
             font-weight: 700;
         }
 
         .contact-card h3 {
             margin-bottom: 8px;
-
             color: #0f172a;
         }
 
         .contact-card p {
             color: #64748b;
-
             font-size: 14px;
-
             word-break: break-word;
         }
 
@@ -1040,31 +870,22 @@
 
         footer {
             padding: 35px 20px;
-
             background: #0f172a;
-
             color: #94a3b8;
-
             text-align: center;
         }
 
         .footer-links {
             display: flex;
-
             justify-content: center;
-
             flex-wrap: wrap;
-
             gap: 22px;
-
             margin-bottom: 17px;
         }
 
         .footer-links a {
             color: #cbd5e1;
-
             font-size: 14px;
-
             text-decoration: none;
         }
 
@@ -1081,14 +902,14 @@
            TABLET
         ====================================================== */
 
-        @media (max-width: 1000px) {
+        @media (max-width: 1100px) {
 
             .nav-links {
-                gap: 15px;
+                gap: 13px;
             }
 
             .nav-links a {
-                font-size: 13px;
+                font-size: 12px;
             }
 
         }
@@ -1098,13 +919,11 @@
 
             .hero-container {
                 grid-template-columns: 300px 1fr;
-
                 gap: 45px;
             }
 
             .hero-photo img {
                 max-width: 300px;
-
                 height: 370px;
             }
 
@@ -1114,9 +933,7 @@
 
             .contact-grid {
                 grid-template-columns: 1fr;
-
                 max-width: 600px;
-
                 margin: auto;
             }
 
@@ -1139,25 +956,16 @@
 
             .nav-links {
                 position: absolute;
-
                 top: 70px;
                 left: 0;
-
                 width: 100%;
-
                 display: none;
-
                 flex-direction: column;
-
                 align-items: stretch;
-
                 gap: 0;
-
                 padding: 10px 5% 20px;
-
                 background: white;
-
-                box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
             }
 
             .nav-links.active {
@@ -1170,11 +978,8 @@
 
             .nav-links a {
                 display: block;
-
                 padding: 12px 8px;
-
                 font-size: 15px;
-
                 border-bottom: 1px solid #f1f5f9;
             }
 
@@ -1188,7 +993,6 @@
 
             .hero-container {
                 grid-template-columns: 1fr;
-
                 gap: 35px;
             }
 
@@ -1198,7 +1002,6 @@
 
             .hero-text {
                 order: 2;
-
                 text-align: center;
             }
 
@@ -1221,7 +1024,6 @@
 
             .hero-description {
                 margin: auto;
-
                 font-size: 16px;
             }
 
@@ -1237,11 +1039,10 @@
                 font-size: 31px;
             }
 
-            .education-card {
+            .education-card,
+            .award-card {
                 flex-direction: column;
-
                 align-items: center;
-
                 text-align: center;
             }
 
@@ -1267,7 +1068,6 @@
 
             .cv-buttons {
                 flex-direction: column;
-
                 align-items: center;
             }
 
@@ -1304,6 +1104,10 @@
 <body>
 
 
+<!-- =====================================================
+     SKIP LINK
+====================================================== -->
+
 <a class="skip-link"
    href="#main-content">
 
@@ -1326,19 +1130,17 @@
     </a>
 
 
-    <button
-        class="menu-button"
-        id="menuButton"
-        type="button"
-        aria-label="Open navigation menu"
-        aria-controls="navLinks"
-        aria-expanded="false">
+    <button class="menu-button"
+            id="menuButton"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-controls="navLinks"
+            aria-expanded="false">
 
-        <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2">
+        <svg viewBox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="2">
 
             <path d="M4 6h16"></path>
             <path d="M4 12h16"></path>
@@ -1388,6 +1190,13 @@
         </li>
 
         <li>
+            <a href="#awards"
+               class="nav-link">
+                Awards
+            </a>
+        </li>
+
+        <li>
             <a href="#cv"
                class="nav-link">
                 CV
@@ -1416,23 +1225,20 @@
 <section class="hero"
          id="home">
 
-
     <div class="hero-container">
 
 
         <div class="hero-photo">
 
-            <img
-                src="images/profile.jpg"
-                alt="Portrait of Paul Omude"
-                width="360"
-                height="440">
+            <img src="images/profile.jpg"
+                 alt="Portrait of Paul Omude"
+                 width="360"
+                 height="440">
 
         </div>
 
 
         <div class="hero-text">
-
 
             <span class="intro">
                 Welcome to my website
@@ -1467,7 +1273,6 @@
 
             <div class="buttons">
 
-
                 <a href="#about"
                    class="btn btn-primary">
 
@@ -1497,15 +1302,11 @@
 
                 </a>
 
-
             </div>
-
 
         </div>
 
-
     </div>
-
 
 </section>
 
@@ -1516,7 +1317,6 @@
 
 <section class="about"
          id="about">
-
 
     <div class="section-header">
 
@@ -1538,6 +1338,7 @@
 
         </p>
 
+
         <p>
 
             My academic and professional journey reflects
@@ -1546,6 +1347,7 @@
             learning.
 
         </p>
+
 
         <p>
 
@@ -1558,7 +1360,6 @@
 
     </div>
 
-
 </section>
 
 
@@ -1568,7 +1369,6 @@
 
 <section class="education"
          id="education">
-
 
     <div class="section-header">
 
@@ -1662,9 +1462,7 @@
 
         </article>
 
-
     </div>
-
 
 </section>
 
@@ -1675,7 +1473,6 @@
 
 <section class="experience"
          id="experience">
-
 
     <div class="section-header">
 
@@ -1698,37 +1495,27 @@
     <div class="experience-container">
 
 
-        <!-- OSU -->
+        <!-- OKLAHOMA STATE UNIVERSITY -->
 
         <article class="experience-card">
-
 
             <div class="experience-marker">
                 💻
             </div>
 
-
             <div class="experience-content">
-
 
                 <h3>
                     Graduate Teaching Assistant
                 </h3>
 
-
                 <p class="experience-organization">
-
                     Oklahoma State University
-
                 </p>
 
-
                 <span class="experience-period">
-
                     Computer Science
-
                 </span>
-
 
                 <ul>
 
@@ -1754,44 +1541,32 @@
 
                 </ul>
 
-
             </div>
-
 
         </article>
 
 
-        <!-- SECONDARY SCHOOL -->
+        <!-- NAZARETH SENIOR COLLEGE -->
 
         <article class="experience-card">
-
 
             <div class="experience-marker">
                 📚
             </div>
 
-
             <div class="experience-content">
-
 
                 <h3>
                     Computer Science & Physics Teacher
                 </h3>
 
-
                 <p class="experience-organization">
-
                     Nazareth Senior College
-
                 </p>
 
-
                 <span class="experience-period">
-
                     Teaching & Academic Support
-
                 </span>
-
 
                 <ul>
 
@@ -1817,15 +1592,11 @@
 
                 </ul>
 
-
             </div>
-
 
         </article>
 
-
     </div>
-
 
 </section>
 
@@ -1836,7 +1607,6 @@
 
 <section class="skills"
          id="skills">
-
 
     <div class="section-header">
 
@@ -1873,21 +1643,10 @@
 
             <div class="skill-list">
 
-                <span class="skill-tag">
-                    C
-                </span>
-
-                <span class="skill-tag">
-                    C++
-                </span>
-
-                <span class="skill-tag">
-                    Java
-                </span>
-
-                <span class="skill-tag">
-                    JavaScript
-                </span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">JavaScript</span>
 
             </div>
 
@@ -1908,21 +1667,10 @@
 
             <div class="skill-list">
 
-                <span class="skill-tag">
-                    HTML
-                </span>
-
-                <span class="skill-tag">
-                    CSS
-                </span>
-
-                <span class="skill-tag">
-                    JavaScript
-                </span>
-
-                <span class="skill-tag">
-                    Node.js
-                </span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Node.js</span>
 
             </div>
 
@@ -1943,28 +1691,17 @@
 
             <div class="skill-list">
 
-                <span class="skill-tag">
-                    Git
-                </span>
-
-                <span class="skill-tag">
-                    GitHub
-                </span>
-
-                <span class="skill-tag">
-                    GitHub Pages
-                </span>
-
-                <span class="skill-tag">
-                    CI/CD
-                </span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">GitHub Pages</span>
+                <span class="skill-tag">CI/CD</span>
 
             </div>
 
         </article>
 
 
-        <!-- SYSTEMS -->
+        <!-- COMPUTING -->
 
         <article class="skill-card">
 
@@ -1978,17 +1715,9 @@
 
             <div class="skill-list">
 
-                <span class="skill-tag">
-                    Operating Systems
-                </span>
-
-                <span class="skill-tag">
-                    Computer Networks
-                </span>
-
-                <span class="skill-tag">
-                    Software Engineering
-                </span>
+                <span class="skill-tag">Operating Systems</span>
+                <span class="skill-tag">Computer Networks</span>
+                <span class="skill-tag">Software Engineering</span>
 
             </div>
 
@@ -2009,17 +1738,9 @@
 
             <div class="skill-list">
 
-                <span class="skill-tag">
-                    Data Analysis
-                </span>
-
-                <span class="skill-tag">
-                    Machine Learning
-                </span>
-
-                <span class="skill-tag">
-                    Artificial Intelligence
-                </span>
+                <span class="skill-tag">Data Analysis</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Artificial Intelligence</span>
 
             </div>
 
@@ -2040,21 +1761,10 @@
 
             <div class="skill-list">
 
-                <span class="skill-tag">
-                    Teaching
-                </span>
-
-                <span class="skill-tag">
-                    Technical Writing
-                </span>
-
-                <span class="skill-tag">
-                    Problem Solving
-                </span>
-
-                <span class="skill-tag">
-                    Student Support
-                </span>
+                <span class="skill-tag">Teaching</span>
+                <span class="skill-tag">Technical Writing</span>
+                <span class="skill-tag">Problem Solving</span>
+                <span class="skill-tag">Student Support</span>
 
             </div>
 
@@ -2063,6 +1773,62 @@
 
     </div>
 
+</section>
+
+
+<!-- =====================================================
+     AWARDS & HONORS
+====================================================== -->
+
+<section class="awards"
+         id="awards">
+
+    <div class="section-header">
+
+        <h2>
+            Awards & Honors
+        </h2>
+
+        <div class="line"></div>
+
+        <p>
+            Selected academic recognition and achievement.
+        </p>
+
+    </div>
+
+
+    <div class="awards-container">
+
+        <article class="award-card">
+
+            <div class="award-icon">
+                🏆
+            </div>
+
+            <div class="award-details">
+
+                <h3>
+                    Best Graduating Student
+                </h3>
+
+                <h4>
+                    Department of Computer Science
+                </h4>
+
+                <p>
+
+                    Recognized for outstanding academic
+                    performance and achievement in
+                    Computer Science.
+
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
 
 </section>
 
@@ -2073,7 +1839,6 @@
 
 <section class="cv-section"
          id="cv">
-
 
     <div class="section-header">
 
@@ -2088,7 +1853,6 @@
 
     <div class="cv-container">
 
-
         <p>
 
             View my curriculum vitae for additional
@@ -2101,35 +1865,29 @@
 
         <div class="cv-buttons">
 
-
-            <a
-                href="cv.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-primary"
-                data-ga-event="view_cv">
+            <a href="cv.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-primary"
+               data-ga-event="view_cv">
 
                 View CV
 
             </a>
 
 
-            <a
-                href="cv.pdf"
-                download="Paul-Omude-CV.pdf"
-                class="btn btn-dark"
-                data-ga-event="download_cv">
+            <a href="cv.pdf"
+               download="Paul-Omude-CV.pdf"
+               class="btn btn-dark"
+               data-ga-event="download_cv">
 
                 Download CV
 
             </a>
 
-
         </div>
 
-
     </div>
-
 
 </section>
 
@@ -2140,7 +1898,6 @@
 
 <section class="contact"
          id="contact">
-
 
     <div class="section-header">
 
@@ -2155,7 +1912,6 @@
 
     <div class="contact-content">
 
-
         <p class="contact-intro">
 
             Thank you for visiting my website.
@@ -2168,10 +1924,11 @@
         <div class="contact-grid">
 
 
-            <a
-                href="mailto:omudepaul@gmail.com"
-                class="contact-card"
-                data-ga-event="email_click">
+            <!-- EMAIL -->
+
+            <a href="mailto:omudepaul@gmail.com"
+               class="contact-card"
+               data-ga-event="email_click">
 
                 <div class="contact-icon">
                     @
@@ -2188,12 +1945,13 @@
             </a>
 
 
-            <a
-                href="https://www.linkedin.com/in/omudepaul"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-card"
-                data-ga-event="linkedin_click">
+            <!-- LINKEDIN -->
+
+            <a href="https://www.linkedin.com/in/omudepaul"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-card"
+               data-ga-event="linkedin_click">
 
                 <div class="contact-icon">
                     in
@@ -2210,12 +1968,13 @@
             </a>
 
 
-            <a
-                href="https://github.com/omudepaul"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-card"
-                data-ga-event="github_click">
+            <!-- GITHUB -->
+
+            <a href="https://github.com/omudepaul"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-card"
+               data-ga-event="github_click">
 
                 <div class="contact-icon">
                     GH
@@ -2234,9 +1993,7 @@
 
         </div>
 
-
     </div>
-
 
 </section>
 
@@ -2249,7 +2006,6 @@
 ====================================================== -->
 
 <footer>
-
 
     <div class="footer-links">
 
@@ -2292,11 +2048,17 @@
         </a>
 
 
+        <a href="privacy.html"
+           data-ga-event="privacy_click">
+
+            Privacy
+
+        </a>
+
+
     </div>
 
-<a href="privacy.html">
-    Privacy
-</a>
+
     <p>
 
         © <span id="year"></span>
@@ -2304,7 +2066,6 @@
         All Rights Reserved.
 
     </p>
-
 
 </footer>
 
@@ -2316,7 +2077,9 @@
 <script>
 
 
-    /* MOBILE MENU */
+    /* =====================================================
+       MOBILE MENU
+    ====================================================== */
 
     const menuButton =
         document.getElementById("menuButton");
@@ -2345,26 +2108,32 @@
 
     document
         .querySelectorAll(".nav-links a")
-        .forEach(function(link) {
+        .forEach(
+            function (link) {
 
-            link.addEventListener(
-                "click",
-                function() {
+                link.addEventListener(
+                    "click",
+                    function () {
 
-                    navLinks.classList.remove("active");
+                        navLinks.classList.remove(
+                            "active"
+                        );
 
-                    menuButton.setAttribute(
-                        "aria-expanded",
-                        "false"
-                    );
+                        menuButton.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
 
-                }
-            );
+                    }
+                );
 
-        });
+            }
+        );
 
 
-    /* ACTIVE NAVIGATION */
+    /* =====================================================
+       ACTIVE NAVIGATION
+    ====================================================== */
 
     const sections =
         document.querySelectorAll(
@@ -2380,23 +2149,22 @@
     const observer =
         new IntersectionObserver(
 
-            function(entries) {
+            function (entries) {
 
                 entries.forEach(
-                    function(entry) {
+                    function (entry) {
 
                         if (entry.isIntersecting) {
 
-                            navigationLinks
-                                .forEach(
-                                    function(link) {
+                            navigationLinks.forEach(
+                                function (link) {
 
-                                        link.classList.remove(
-                                            "active"
-                                        );
+                                    link.classList.remove(
+                                        "active"
+                                    );
 
-                                    }
-                                );
+                                }
+                            );
 
 
                             const activeLink =
@@ -2431,7 +2199,7 @@
 
 
     sections.forEach(
-        function(section) {
+        function (section) {
 
             observer.observe(section);
 
@@ -2439,7 +2207,9 @@
     );
 
 
-    /* AUTOMATIC YEAR */
+    /* =====================================================
+       AUTOMATIC YEAR
+    ====================================================== */
 
     document.getElementById(
         "year"
@@ -2456,11 +2226,11 @@
             "[data-ga-event]"
         )
         .forEach(
-            function(element) {
+            function (element) {
 
                 element.addEventListener(
                     "click",
-                    function() {
+                    function () {
 
                         const eventName =
                             element.getAttribute(
