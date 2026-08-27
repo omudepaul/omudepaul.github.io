@@ -1,0 +1,66 @@
+name: Website Quality Check
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  website-quality:
+    name: Validate Website
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required website files
+        run: |
+          test -f index.html
+          test -f privacy.html
+          test -f 404.html
+          test -f robots.txt
+          test -f sitemap.xml
+          test -f cv.pdf
+          test -f README.md
+
+      - name: Check required image files
+        run: |
+          test -f images/profile.jpg
+          test -f images/og-image.png
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install HTML validator
+        run: npm install --global html-validate
+
+      - name: Validate homepage
+        run: html-validate index.html
+
+      - name: Validate privacy page
+        run: html-validate privacy.html
+
+      - name: Validate 404 page
+        run: html-validate 404.html
+
+      - name: Check sitemap
+        run: |
+          grep -q "https://omudepaul.github.io/" sitemap.xml
+          grep -q "privacy.html" sitemap.xml
+
+      - name: Check robots.txt
+        run: |
+          grep -q "User-agent:" robots.txt
+          grep -q "Sitemap:" robots.txt
+
+      - name: Website quality check passed
+        run: |
+          echo "All required website quality checks passed."
