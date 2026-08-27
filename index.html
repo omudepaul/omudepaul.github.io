@@ -103,7 +103,7 @@
 
 
     <!-- =====================================================
-         X / TWITTER
+         TWITTER / X
     ====================================================== -->
 
     <meta name="twitter:card"
@@ -131,13 +131,16 @@
         "url": "https://omudepaul.github.io/",
         "image": "https://omudepaul.github.io/images/profile.jpg",
         "jobTitle": "Ph.D. Student in Computer Science",
+
         "affiliation": {
             "@type": "CollegeOrUniversity",
             "name": "Oklahoma State University"
         },
+
         "sameAs": [
             "https://github.com/omudepaul",
-            "https://www.linkedin.com/in/omudepaul"
+            "https://www.linkedin.com/in/omudepaul",
+            "https://www.acm.org/"
         ]
     }
     </script>
@@ -168,7 +171,7 @@
 
         section {
             padding: 100px 8%;
-            scroll-margin-top: 80px;
+            scroll-margin-top: 90px;
         }
 
         img {
@@ -215,14 +218,21 @@
             position: fixed;
             top: 0;
             left: 0;
+
             width: 100%;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 18px 8%;
+
+            padding: 18px 6%;
+
             background: rgba(255, 255, 255, 0.97);
+
             backdrop-filter: blur(12px);
+
             border-bottom: 1px solid #e2e8f0;
+
             z-index: 1000;
         }
 
@@ -237,14 +247,14 @@
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 16px;
             list-style: none;
         }
 
         .nav-links a {
             position: relative;
             color: #475569;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 600;
             text-decoration: none;
             transition: 0.25s;
@@ -257,12 +267,17 @@
 
         .nav-links a::after {
             content: "";
+
             position: absolute;
+
             left: 0;
             bottom: -6px;
+
             width: 0;
             height: 2px;
+
             background: #2563eb;
+
             transition: width 0.25s;
         }
 
@@ -273,18 +288,24 @@
 
 
         /* =====================================================
-           MOBILE MENU
+           MOBILE MENU BUTTON
         ====================================================== */
 
         .menu-button {
             display: none;
+
             width: 44px;
             height: 44px;
+
             align-items: center;
             justify-content: center;
+
             border: 0;
+
             background: transparent;
+
             color: #0f172a;
+
             cursor: pointer;
         }
 
@@ -300,11 +321,15 @@
 
         .hero {
             min-height: 100vh;
+
             display: flex;
+
             align-items: center;
             justify-content: center;
+
             padding-top: 130px;
             padding-bottom: 80px;
+
             color: white;
 
             background:
@@ -323,10 +348,15 @@
 
         .hero-container {
             width: 100%;
+
             max-width: 1150px;
+
             display: grid;
+
             grid-template-columns: 380px 1fr;
+
             align-items: center;
+
             gap: 75px;
         }
 
@@ -337,13 +367,20 @@
 
         .hero-photo img {
             width: 100%;
+
             max-width: 360px;
+
             height: 440px;
+
             object-fit: cover;
             object-position: center top;
+
             border-radius: 22px;
+
             border: 4px solid rgba(255, 255, 255, 0.15);
+
             box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+
             transition: 0.3s;
         }
 
@@ -353,37 +390,53 @@
 
         .intro {
             display: inline-block;
+
             margin-bottom: 18px;
+
             color: #93c5fd;
+
             font-size: 14px;
+
             font-weight: 700;
+
             letter-spacing: 3px;
+
             text-transform: uppercase;
         }
 
         .hero h1 {
             margin-bottom: 18px;
+
             font-size: clamp(48px, 6vw, 66px);
+
             line-height: 1.08;
         }
 
         .hero h2 {
             margin-bottom: 7px;
+
             color: #e2e8f0;
+
             font-size: 27px;
+
             font-weight: 400;
         }
 
         .university {
             margin-bottom: 28px;
+
             color: #94a3b8;
+
             font-size: 19px;
         }
 
         .hero-description {
             max-width: 650px;
+
             color: #cbd5e1;
+
             font-size: 18px;
+
             line-height: 1.85;
         }
 
@@ -401,13 +454,20 @@
 
         .btn {
             min-height: 48px;
+
             display: inline-flex;
+
             align-items: center;
             justify-content: center;
+
             padding: 12px 24px;
+
             border-radius: 8px;
+
             font-weight: 600;
+
             text-decoration: none;
+
             transition: 0.25s;
         }
 
@@ -483,10 +543,15 @@
 
         .about-content {
             max-width: 850px;
+
             margin: auto;
+
             color: #475569;
+
             font-size: 18px;
+
             line-height: 1.9;
+
             text-align: center;
         }
 
@@ -510,43 +575,63 @@
 
         .education-card {
             display: flex;
+
             align-items: flex-start;
+
             gap: 25px;
+
             margin-bottom: 20px;
+
             padding: 30px;
+
             background: white;
+
             border: 1px solid #e2e8f0;
+
             border-radius: 12px;
+
             box-shadow: 0 7px 25px rgba(0, 0, 0, 0.04);
+
             transition: 0.3s;
         }
 
         .education-card:hover {
             transform: translateY(-4px);
+
             box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
         }
 
         .education-icon {
             width: 58px;
             height: 58px;
+
             flex-shrink: 0;
+
             display: flex;
+
             align-items: center;
             justify-content: center;
+
             background: #eff6ff;
+
             border-radius: 50%;
+
             font-size: 25px;
         }
 
         .education-details h3 {
             color: #0f172a;
+
             font-size: 21px;
+
             margin-bottom: 4px;
         }
 
         .education-details h4 {
             color: #2563eb;
+
             font-size: 16px;
+
             margin-bottom: 5px;
         }
 
@@ -565,77 +650,110 @@
 
         .experience-container {
             position: relative;
+
             max-width: 950px;
+
             margin: auto;
         }
 
         .experience-container::before {
             content: "";
+
             position: absolute;
+
             left: 28px;
+
             top: 15px;
             bottom: 15px;
+
             width: 2px;
+
             background: #dbeafe;
         }
 
         .experience-card {
             position: relative;
+
             display: grid;
+
             grid-template-columns: 60px 1fr;
+
             gap: 25px;
+
             margin-bottom: 30px;
         }
 
         .experience-marker {
             position: relative;
+
             z-index: 2;
+
             width: 58px;
             height: 58px;
+
             display: flex;
+
             align-items: center;
             justify-content: center;
+
             background: #2563eb;
+
             color: white;
+
             border-radius: 50%;
+
             font-size: 22px;
+
             box-shadow: 0 7px 20px rgba(37, 99, 235, 0.22);
         }
 
         .experience-content {
             padding: 30px;
+
             background: #f8fafc;
+
             border: 1px solid #e2e8f0;
+
             border-radius: 12px;
+
             transition: 0.3s;
         }
 
         .experience-content:hover {
             transform: translateY(-3px);
+
             box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
         }
 
         .experience-content h3 {
             margin-bottom: 4px;
+
             color: #0f172a;
+
             font-size: 22px;
         }
 
         .experience-organization {
             color: #2563eb;
+
             font-weight: 600;
+
             margin-bottom: 4px;
         }
 
         .experience-period {
             display: inline-block;
+
             margin-bottom: 15px;
+
             color: #64748b;
+
             font-size: 14px;
         }
 
         .experience-content ul {
             padding-left: 20px;
+
             color: #475569;
         }
 
@@ -654,63 +772,89 @@
 
         .skills-container {
             max-width: 1050px;
+
             margin: auto;
+
             display: grid;
+
             grid-template-columns: repeat(3, 1fr);
+
             gap: 22px;
         }
 
         .skill-card {
             padding: 32px 25px;
+
             background: white;
+
             border: 1px solid #e2e8f0;
+
             border-radius: 12px;
+
             box-shadow: 0 7px 25px rgba(0, 0, 0, 0.04);
+
             transition: 0.3s;
         }
 
         .skill-card:hover {
             transform: translateY(-5px);
+
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
         }
 
         .skill-icon {
             width: 52px;
             height: 52px;
+
             display: flex;
+
             align-items: center;
             justify-content: center;
+
             margin-bottom: 18px;
+
             background: #eff6ff;
+
             border-radius: 10px;
+
             font-size: 23px;
         }
 
         .skill-card h3 {
             margin-bottom: 15px;
+
             color: #0f172a;
+
             font-size: 20px;
         }
 
         .skill-list {
             display: flex;
+
             flex-wrap: wrap;
+
             gap: 8px;
         }
 
         .skill-tag {
             padding: 7px 11px;
+
             background: #f1f5f9;
+
             color: #475569;
+
             border: 1px solid #e2e8f0;
+
             border-radius: 20px;
+
             font-size: 13px;
+
             font-weight: 600;
         }
 
 
         /* =====================================================
-           AWARDS
+           AWARDS & HONORS
         ====================================================== */
 
         .awards {
@@ -724,42 +868,61 @@
 
         .award-card {
             display: flex;
+
             align-items: flex-start;
+
             gap: 25px;
+
             padding: 32px;
+
             background: #f8fafc;
+
             border: 1px solid #e2e8f0;
+
             border-radius: 12px;
+
             box-shadow: 0 7px 25px rgba(0, 0, 0, 0.04);
+
             transition: 0.3s;
         }
 
         .award-card:hover {
             transform: translateY(-4px);
+
             box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
         }
 
         .award-icon {
             width: 58px;
             height: 58px;
+
             flex-shrink: 0;
+
             display: flex;
+
             align-items: center;
             justify-content: center;
+
             background: #eff6ff;
+
             border-radius: 50%;
+
             font-size: 25px;
         }
 
         .award-details h3 {
             color: #0f172a;
+
             font-size: 22px;
+
             margin-bottom: 5px;
         }
 
         .award-details h4 {
             color: #2563eb;
+
             font-size: 16px;
+
             margin-bottom: 8px;
         }
 
@@ -769,29 +932,135 @@
 
 
         /* =====================================================
+           PROFESSIONAL MEMBERSHIPS
+        ====================================================== */
+
+        .memberships {
+            background: #f8fafc;
+        }
+
+        .memberships-container {
+            max-width: 950px;
+
+            margin: auto;
+        }
+
+        .membership-card {
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 25px;
+
+            padding: 35px;
+
+            background: white;
+
+            border: 1px solid #e2e8f0;
+
+            border-radius: 12px;
+
+            box-shadow: 0 7px 25px rgba(0, 0, 0, 0.04);
+
+            transition: 0.3s;
+        }
+
+        .membership-card:hover {
+            transform: translateY(-4px);
+
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .membership-icon {
+            width: 68px;
+            height: 68px;
+
+            flex-shrink: 0;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            background: #2563eb;
+
+            color: white;
+
+            border-radius: 50%;
+
+            font-size: 18px;
+
+            font-weight: 700;
+        }
+
+        .membership-details h3 {
+            margin-bottom: 6px;
+
+            color: #0f172a;
+
+            font-size: 22px;
+        }
+
+        .membership-status {
+            margin-bottom: 12px;
+
+            color: #2563eb;
+
+            font-weight: 700;
+        }
+
+        .membership-details p {
+            color: #64748b;
+        }
+
+        .membership-link {
+            display: inline-block;
+
+            margin-top: 15px;
+
+            color: #2563eb;
+
+            font-weight: 600;
+
+            text-decoration: none;
+        }
+
+        .membership-link:hover {
+            text-decoration: underline;
+        }
+
+
+        /* =====================================================
            CV
         ====================================================== */
 
         .cv-section {
-            background: #f8fafc;
+            background: white;
+
             text-align: center;
         }
 
         .cv-container {
             max-width: 750px;
+
             margin: auto;
         }
 
         .cv-container p {
             margin-bottom: 30px;
+
             color: #475569;
+
             font-size: 18px;
         }
 
         .cv-buttons {
             display: flex;
+
             justify-content: center;
+
             flex-wrap: wrap;
+
             gap: 12px;
         }
 
@@ -801,65 +1070,90 @@
         ====================================================== */
 
         .contact {
-            background: white;
+            background: #f8fafc;
+
             text-align: center;
         }
 
         .contact-content {
             max-width: 950px;
+
             margin: auto;
         }
 
         .contact-intro {
             max-width: 700px;
+
             margin: 0 auto 40px;
+
             color: #475569;
+
             font-size: 18px;
         }
 
         .contact-grid {
             display: grid;
+
             grid-template-columns: repeat(3, 1fr);
+
             gap: 20px;
         }
 
         .contact-card {
             padding: 35px 20px;
-            background: #f8fafc;
+
+            background: white;
+
             border: 1px solid #e2e8f0;
+
             border-radius: 12px;
+
             box-shadow: 0 7px 25px rgba(0, 0, 0, 0.05);
+
             text-decoration: none;
+
             transition: 0.3s;
         }
 
         .contact-card:hover {
             transform: translateY(-6px);
+
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.09);
         }
 
         .contact-icon {
             width: 58px;
             height: 58px;
+
             display: flex;
+
             align-items: center;
             justify-content: center;
+
             margin: 0 auto 17px;
+
             background: #eff6ff;
+
             color: #2563eb;
+
             border-radius: 50%;
+
             font-size: 20px;
+
             font-weight: 700;
         }
 
         .contact-card h3 {
             margin-bottom: 8px;
+
             color: #0f172a;
         }
 
         .contact-card p {
             color: #64748b;
+
             font-size: 14px;
+
             word-break: break-word;
         }
 
@@ -870,22 +1164,31 @@
 
         footer {
             padding: 35px 20px;
+
             background: #0f172a;
+
             color: #94a3b8;
+
             text-align: center;
         }
 
         .footer-links {
             display: flex;
+
             justify-content: center;
+
             flex-wrap: wrap;
+
             gap: 22px;
+
             margin-bottom: 17px;
         }
 
         .footer-links a {
             color: #cbd5e1;
+
             font-size: 14px;
+
             text-decoration: none;
         }
 
@@ -902,10 +1205,10 @@
            TABLET
         ====================================================== */
 
-        @media (max-width: 1100px) {
+        @media (max-width: 1200px) {
 
             .nav-links {
-                gap: 13px;
+                gap: 11px;
             }
 
             .nav-links a {
@@ -915,15 +1218,17 @@
         }
 
 
-        @media (max-width: 900px) {
+        @media (max-width: 950px) {
 
             .hero-container {
                 grid-template-columns: 300px 1fr;
+
                 gap: 45px;
             }
 
             .hero-photo img {
                 max-width: 300px;
+
                 height: 370px;
             }
 
@@ -933,7 +1238,9 @@
 
             .contact-grid {
                 grid-template-columns: 1fr;
+
                 max-width: 600px;
+
                 margin: auto;
             }
 
@@ -944,7 +1251,7 @@
            MOBILE
         ====================================================== */
 
-        @media (max-width: 760px) {
+        @media (max-width: 820px) {
 
             nav {
                 padding: 14px 5%;
@@ -956,15 +1263,24 @@
 
             .nav-links {
                 position: absolute;
+
                 top: 70px;
                 left: 0;
+
                 width: 100%;
+
                 display: none;
+
                 flex-direction: column;
+
                 align-items: stretch;
+
                 gap: 0;
+
                 padding: 10px 5% 20px;
+
                 background: white;
+
                 box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
             }
 
@@ -978,8 +1294,11 @@
 
             .nav-links a {
                 display: block;
+
                 padding: 12px 8px;
+
                 font-size: 15px;
+
                 border-bottom: 1px solid #f1f5f9;
             }
 
@@ -993,6 +1312,7 @@
 
             .hero-container {
                 grid-template-columns: 1fr;
+
                 gap: 35px;
             }
 
@@ -1002,11 +1322,13 @@
 
             .hero-text {
                 order: 2;
+
                 text-align: center;
             }
 
             .hero-photo img {
                 width: 245px;
+
                 height: 295px;
             }
 
@@ -1024,6 +1346,7 @@
 
             .hero-description {
                 margin: auto;
+
                 font-size: 16px;
             }
 
@@ -1040,9 +1363,12 @@
             }
 
             .education-card,
-            .award-card {
+            .award-card,
+            .membership-card {
                 flex-direction: column;
+
                 align-items: center;
+
                 text-align: center;
             }
 
@@ -1068,6 +1394,7 @@
 
             .cv-buttons {
                 flex-direction: column;
+
                 align-items: center;
             }
 
@@ -1105,7 +1432,7 @@
 
 
 <!-- =====================================================
-     SKIP LINK
+     ACCESSIBILITY
 ====================================================== -->
 
 <a class="skip-link"
@@ -1193,6 +1520,13 @@
             <a href="#awards"
                class="nav-link">
                 Awards
+            </a>
+        </li>
+
+        <li>
+            <a href="#memberships"
+               class="nav-link">
+                Memberships
             </a>
         </li>
 
@@ -1462,6 +1796,7 @@
 
         </article>
 
+
     </div>
 
 </section>
@@ -1596,6 +1931,7 @@
 
         </article>
 
+
     </div>
 
 </section>
@@ -1629,8 +1965,6 @@
     <div class="skills-container">
 
 
-        <!-- PROGRAMMING -->
-
         <article class="skill-card">
 
             <div class="skill-icon">
@@ -1652,8 +1986,6 @@
 
         </article>
 
-
-        <!-- WEB -->
 
         <article class="skill-card">
 
@@ -1677,8 +2009,6 @@
         </article>
 
 
-        <!-- DEVELOPMENT -->
-
         <article class="skill-card">
 
             <div class="skill-icon">
@@ -1701,8 +2031,6 @@
         </article>
 
 
-        <!-- COMPUTING -->
-
         <article class="skill-card">
 
             <div class="skill-icon">
@@ -1715,16 +2043,22 @@
 
             <div class="skill-list">
 
-                <span class="skill-tag">Operating Systems</span>
-                <span class="skill-tag">Computer Networks</span>
-                <span class="skill-tag">Software Engineering</span>
+                <span class="skill-tag">
+                    Operating Systems
+                </span>
+
+                <span class="skill-tag">
+                    Computer Networks
+                </span>
+
+                <span class="skill-tag">
+                    Software Engineering
+                </span>
 
             </div>
 
         </article>
 
-
-        <!-- DATA -->
 
         <article class="skill-card">
 
@@ -1738,16 +2072,22 @@
 
             <div class="skill-list">
 
-                <span class="skill-tag">Data Analysis</span>
-                <span class="skill-tag">Machine Learning</span>
-                <span class="skill-tag">Artificial Intelligence</span>
+                <span class="skill-tag">
+                    Data Analysis
+                </span>
+
+                <span class="skill-tag">
+                    Machine Learning
+                </span>
+
+                <span class="skill-tag">
+                    Artificial Intelligence
+                </span>
 
             </div>
 
         </article>
 
-
-        <!-- PROFESSIONAL -->
 
         <article class="skill-card">
 
@@ -1761,10 +2101,21 @@
 
             <div class="skill-list">
 
-                <span class="skill-tag">Teaching</span>
-                <span class="skill-tag">Technical Writing</span>
-                <span class="skill-tag">Problem Solving</span>
-                <span class="skill-tag">Student Support</span>
+                <span class="skill-tag">
+                    Teaching
+                </span>
+
+                <span class="skill-tag">
+                    Technical Writing
+                </span>
+
+                <span class="skill-tag">
+                    Problem Solving
+                </span>
+
+                <span class="skill-tag">
+                    Student Support
+                </span>
 
             </div>
 
@@ -1834,7 +2185,82 @@
 
 
 <!-- =====================================================
-     CV
+     PROFESSIONAL MEMBERSHIPS
+====================================================== -->
+
+<section class="memberships"
+         id="memberships">
+
+    <div class="section-header">
+
+        <h2>
+            Professional Memberships
+        </h2>
+
+        <div class="line"></div>
+
+        <p>
+
+            Professional organizations that support my
+            continued engagement with the computing community.
+
+        </p>
+
+    </div>
+
+
+    <div class="memberships-container">
+
+        <article class="membership-card">
+
+            <div class="membership-icon">
+                ACM
+            </div>
+
+
+            <div class="membership-details">
+
+                <h3>
+                    Association for Computing Machinery (ACM)
+                </h3>
+
+
+                <p class="membership-status">
+                    Member
+                </p>
+
+
+                <p>
+
+                    Member of the Association for Computing
+                    Machinery, a global professional organization
+                    serving the computing and information
+                    technology community.
+
+                </p>
+
+
+                <a href="https://www.acm.org/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="membership-link"
+                   data-ga-event="acm_click">
+
+                    Visit ACM Website →
+
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CURRICULUM VITAE
 ====================================================== -->
 
 <section class="cv-section"
@@ -2034,6 +2460,16 @@
            data-ga-event="github_click">
 
             GitHub
+
+        </a>
+
+
+        <a href="https://www.acm.org/"
+           target="_blank"
+           rel="noopener noreferrer"
+           data-ga-event="acm_click">
+
+            ACM
 
         </a>
 
