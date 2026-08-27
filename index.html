@@ -3,38 +3,38 @@
 
 <head>
 
-    <!-- =========================================
-         BASIC WEBSITE SETTINGS
-    ========================================== -->
+    <!-- =====================================================
+         BASIC SETTINGS
+    ====================================================== -->
 
     <meta charset="UTF-8">
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
+    <meta name="theme-color"
+          content="#0f172a">
+
     <title>Paul Omude | Computer Science</title>
 
 
-    <!-- =========================================
-         GOOGLE SEARCH CONSOLE VERIFICATION
-    ========================================== -->
+    <!-- =====================================================
+         GOOGLE SEARCH CONSOLE
+    ====================================================== -->
 
     <meta name="google-site-verification"
-          content="2x-2qr5etMoK2Clc7fjBcLuymgZpi789T1-sqJq-VNY" />
+          content="2x-2qr5etMoK2Clc7fjBcLuymgZpi789T1-sqJq-VNY">
 
 
-    <!-- =========================================
-         SEARCH ENGINE INFORMATION
-    ========================================== -->
+    <!-- =====================================================
+         SEO
+    ====================================================== -->
 
     <meta name="author"
           content="Paul Omude">
 
     <meta name="description"
-          content="Paul Omude is a Ph.D. student in Computer Science at Oklahoma State University. Explore his academic background, curriculum vitae, and professional profiles.">
-
-    <meta name="keywords"
-          content="Paul Omude, Computer Science, Oklahoma State University, PhD Student, Academic Website">
+          content="Personal academic website of Paul Omude, Ph.D. student in Computer Science at Oklahoma State University. View his education, curriculum vitae, and professional profiles.">
 
     <meta name="robots"
           content="index, follow">
@@ -43,21 +43,27 @@
           href="https://omudepaul.github.io/">
 
 
-    <!-- =========================================
+    <!-- =====================================================
          FAVICON
-    ========================================== -->
+    ====================================================== -->
 
     <link rel="icon"
           type="image/svg+xml"
           href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230f172a'/%3E%3Ctext x='50' y='64' text-anchor='middle' font-family='Arial' font-size='42' font-weight='bold' fill='white'%3EPO%3C/text%3E%3C/svg%3E">
 
 
-    <!-- =========================================
-         SOCIAL MEDIA PREVIEW
-    ========================================== -->
+    <!-- =====================================================
+         OPEN GRAPH / LINKEDIN / WHATSAPP / FACEBOOK
+    ====================================================== -->
 
     <meta property="og:type"
           content="website">
+
+    <meta property="og:locale"
+          content="en_US">
+
+    <meta property="og:site_name"
+          content="Paul Omude">
 
     <meta property="og:title"
           content="Paul Omude | Computer Science">
@@ -69,15 +75,15 @@
           content="https://omudepaul.github.io/">
 
     <meta property="og:image"
-          content="https://omudepaul.github.io/images/profile.jpg">
+          content="https://omudepaul.github.io/images/og-image.png">
 
-    <meta property="og:site_name"
-          content="Paul Omude">
+    <meta property="og:image:alt"
+          content="Paul Omude - Ph.D. Student in Computer Science at Oklahoma State University">
 
 
-    <!-- =========================================
+    <!-- =====================================================
          X / TWITTER PREVIEW
-    ========================================== -->
+    ====================================================== -->
 
     <meta name="twitter:card"
           content="summary_large_image">
@@ -89,12 +95,12 @@
           content="Personal academic website of Paul Omude, Ph.D. student in Computer Science at Oklahoma State University.">
 
     <meta name="twitter:image"
-          content="https://omudepaul.github.io/images/profile.jpg">
+          content="https://omudepaul.github.io/images/og-image.png">
 
 
-    <!-- =========================================
+    <!-- =====================================================
          STRUCTURED DATA
-    ========================================== -->
+    ====================================================== -->
 
     <script type="application/ld+json">
     {
@@ -104,10 +110,12 @@
         "url": "https://omudepaul.github.io/",
         "image": "https://omudepaul.github.io/images/profile.jpg",
         "jobTitle": "Ph.D. Student in Computer Science",
+
         "affiliation": {
             "@type": "CollegeOrUniversity",
             "name": "Oklahoma State University"
         },
+
         "sameAs": [
             "https://github.com/omudepaul",
             "https://www.linkedin.com/in/omudepaul"
@@ -118,9 +126,9 @@
 
     <style>
 
-        /* =========================================
-           GENERAL
-        ========================================== */
+        /* =====================================================
+           RESET
+        ====================================================== */
 
         * {
             margin: 0;
@@ -128,246 +136,407 @@
             box-sizing: border-box;
         }
 
+
         html {
             scroll-behavior: smooth;
         }
 
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
             background: #ffffff;
+
             color: #1e293b;
+
             line-height: 1.7;
         }
 
+
         section {
             padding: 100px 8%;
-            scroll-margin-top: 75px;
+
+            scroll-margin-top: 80px;
         }
+
 
         a {
             -webkit-tap-highlight-color: transparent;
         }
 
 
-        /* =========================================
+        img {
+            max-width: 100%;
+        }
+
+
+        /* =====================================================
+           ACCESSIBILITY
+        ====================================================== */
+
+        .skip-link {
+            position: absolute;
+
+            top: -60px;
+            left: 20px;
+
+            padding: 12px 20px;
+
+            background: #2563eb;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 6px;
+
+            z-index: 5000;
+        }
+
+
+        .skip-link:focus {
+            top: 20px;
+        }
+
+
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid #60a5fa;
+
+            outline-offset: 4px;
+        }
+
+
+        /* =====================================================
            NAVIGATION
-        ========================================== */
+        ====================================================== */
 
         nav {
             position: fixed;
+
             top: 0;
             left: 0;
+
             width: 100%;
 
             display: flex;
+
             justify-content: space-between;
+
             align-items: center;
 
             padding: 18px 8%;
 
-            background: rgba(255, 255, 255, 0.97);
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.97
+                );
 
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(12px);
 
-            border-bottom: 1px solid #e2e8f0;
+            border-bottom:
+                1px solid #e2e8f0;
 
             z-index: 1000;
         }
 
+
         .logo {
-            font-size: 22px;
-            font-weight: 700;
             color: #0f172a;
+
+            font-size: 22px;
+
+            font-weight: 700;
+
+            text-decoration: none;
+
             white-space: nowrap;
         }
 
-        .nav-links {
-            list-style: none;
 
+        .nav-links {
             display: flex;
+
             align-items: center;
 
             gap: 28px;
+
+            list-style: none;
         }
 
-        .nav-links li a {
-            text-decoration: none;
+
+        .nav-links a {
+            position: relative;
 
             color: #475569;
 
             font-size: 15px;
+
             font-weight: 600;
 
-            transition: 0.3s;
+            text-decoration: none;
+
+            transition: color 0.25s ease;
         }
 
-        .nav-links li a:hover {
+
+        .nav-links a:hover,
+        .nav-links a.active {
             color: #2563eb;
         }
 
 
-        /* =========================================
-           MOBILE MENU BUTTON
-        ========================================== */
+        .nav-links a::after {
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+
+            bottom: -6px;
+
+            width: 0;
+
+            height: 2px;
+
+            background: #2563eb;
+
+            transition: width 0.25s ease;
+        }
+
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+
+        /* =====================================================
+           MOBILE MENU
+        ====================================================== */
 
         .menu-button {
             display: none;
 
-            background: none;
-            border: none;
+            width: 44px;
 
-            cursor: pointer;
-
-            width: 42px;
-            height: 42px;
+            height: 44px;
 
             align-items: center;
+
             justify-content: center;
 
+            background: transparent;
+
+            border: 0;
+
             color: #0f172a;
+
+            cursor: pointer;
         }
+
 
         .menu-button svg {
             width: 28px;
+
             height: 28px;
         }
 
 
-        /* =========================================
+        /* =====================================================
            HERO
-        ========================================== */
+        ====================================================== */
 
         .hero {
             min-height: 100vh;
 
             display: flex;
-            justify-content: center;
+
             align-items: center;
 
+            justify-content: center;
+
+            padding-top: 130px;
+
+            padding-bottom: 80px;
+
+            color: white;
+
             background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(37, 99, 235, 0.15),
+                    transparent 28%
+                ),
                 linear-gradient(
                     135deg,
                     #0f172a 0%,
                     #172554 55%,
                     #1e293b 100%
                 );
-
-            color: white;
-
-            padding-top: 130px;
-            padding-bottom: 80px;
         }
+
 
         .hero-container {
             width: 100%;
+
             max-width: 1150px;
 
             display: grid;
 
             grid-template-columns: 380px 1fr;
 
-            gap: 75px;
-
             align-items: center;
+
+            gap: 75px;
         }
 
 
-        /* =========================================
+        /* =====================================================
            PROFILE PHOTO
-        ========================================== */
+        ====================================================== */
 
         .hero-photo {
             display: flex;
-            justify-content: center;
+
             align-items: center;
+
+            justify-content: center;
         }
+
 
         .hero-photo img {
             width: 100%;
+
             max-width: 360px;
+
             height: 440px;
 
             object-fit: cover;
+
             object-position: center top;
 
-            border-radius: 20px;
+            border-radius: 22px;
 
-            border: 4px solid rgba(255, 255, 255, 0.15);
+            border:
+                4px solid
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.15
+                );
 
             box-shadow:
-                0 25px 60px rgba(0, 0, 0, 0.45);
+                0 25px 60px
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.45
+                );
 
-            transition: transform 0.3s ease;
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
         }
+
 
         .hero-photo img:hover {
-            transform: translateY(-4px);
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 30px 70px
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.5
+                );
         }
 
 
-        /* =========================================
+        /* =====================================================
            HERO TEXT
-        ========================================== */
+        ====================================================== */
 
         .hero-text {
             text-align: left;
         }
 
+
         .intro {
             display: inline-block;
+
+            margin-bottom: 18px;
 
             color: #93c5fd;
 
             font-size: 14px;
-            font-weight: 600;
+
+            font-weight: 700;
 
             letter-spacing: 3px;
 
             text-transform: uppercase;
-
-            margin-bottom: 18px;
         }
+
 
         .hero h1 {
-            font-size: 62px;
-
-            line-height: 1.1;
-
             margin-bottom: 18px;
+
+            font-size: clamp(
+                48px,
+                6vw,
+                66px
+            );
+
+            line-height: 1.08;
+
+            letter-spacing: -1px;
         }
 
-        .hero h2 {
-            font-size: 27px;
 
-            font-weight: 400;
+        .hero h2 {
+            margin-bottom: 7px;
 
             color: #e2e8f0;
 
-            margin-bottom: 6px;
+            font-size: 27px;
+
+            font-weight: 400;
         }
 
+
         .university {
+            margin-bottom: 28px;
+
             color: #94a3b8;
 
             font-size: 19px;
-
-            margin-bottom: 28px;
         }
+
 
         .hero-description {
             max-width: 650px;
 
-            font-size: 18px;
-
             color: #cbd5e1;
 
-            line-height: 1.8;
+            font-size: 18px;
+
+            line-height: 1.85;
         }
 
 
-        /* =========================================
+        /* =====================================================
            BUTTONS
-        ========================================== */
+        ====================================================== */
 
         .buttons {
             display: flex;
@@ -379,36 +548,56 @@
             margin-top: 35px;
         }
 
+
         .btn {
+            min-height: 48px;
+
             display: inline-flex;
 
             align-items: center;
+
             justify-content: center;
 
             gap: 8px;
 
-            min-height: 48px;
-
             padding: 12px 24px;
 
-            border-radius: 7px;
-
-            text-decoration: none;
+            border-radius: 8px;
 
             font-weight: 600;
 
-            transition: all 0.3s ease;
+            text-decoration: none;
+
+            transition:
+                transform 0.25s ease,
+                background 0.25s ease,
+                color 0.25s ease,
+                box-shadow 0.25s ease;
         }
+
 
         .btn svg {
             width: 18px;
+
             height: 18px;
         }
 
+
         .btn-primary {
             background: #2563eb;
+
             color: white;
+
+            box-shadow:
+                0 8px 20px
+                rgba(
+                    37,
+                    99,
+                    235,
+                    0.25
+                );
         }
+
 
         .btn-primary:hover {
             background: #1d4ed8;
@@ -416,11 +605,13 @@
             transform: translateY(-2px);
         }
 
-        .btn-outline {
-            color: white;
 
+        .btn-outline {
             border: 2px solid #cbd5e1;
+
+            color: white;
         }
+
 
         .btn-outline:hover {
             background: white;
@@ -431,84 +622,107 @@
         }
 
 
-        /* =========================================
-           SECTION HEADERS
-        ========================================== */
+        .btn-dark {
+            background: #0f172a;
 
-        .section-header {
-            text-align: center;
-
-            margin-bottom: 55px;
+            color: white;
         }
 
+
+        .btn-dark:hover {
+            background: #1e293b;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
+           SECTION HEADER
+        ====================================================== */
+
+        .section-header {
+            margin-bottom: 55px;
+
+            text-align: center;
+        }
+
+
         .section-header h2 {
-            font-size: 38px;
+            margin-bottom: 12px;
 
             color: #0f172a;
 
-            margin-bottom: 12px;
+            font-size: 38px;
         }
+
 
         .section-header p {
-            color: #64748b;
-
             max-width: 650px;
 
-            margin: 15px auto 0;
+            margin:
+                15px auto 0;
+
+            color: #64748b;
         }
+
 
         .line {
             width: 60px;
-            height: 4px;
 
-            background: #2563eb;
+            height: 4px;
 
             margin: auto;
 
             border-radius: 5px;
+
+            background: #2563eb;
         }
 
 
-        /* =========================================
+        /* =====================================================
            ABOUT
-        ========================================== */
+        ====================================================== */
 
         .about {
             background: white;
         }
+
 
         .about-content {
             max-width: 850px;
 
             margin: auto;
 
-            text-align: center;
-
             color: #475569;
 
             font-size: 18px;
 
             line-height: 1.9;
+
+            text-align: center;
         }
+
 
         .about-content p {
             margin-bottom: 20px;
         }
 
 
-        /* =========================================
+        /* =====================================================
            EDUCATION
-        ========================================== */
+        ====================================================== */
 
         .education {
             background: #f8fafc;
         }
+
 
         .education-container {
             max-width: 950px;
 
             margin: auto;
         }
+
 
         .education-card {
             display: flex;
@@ -517,76 +731,102 @@
 
             gap: 25px;
 
-            background: white;
+            margin-bottom: 20px;
 
             padding: 30px;
 
-            margin-bottom: 20px;
+            background: white;
+
+            border:
+                1px solid #e2e8f0;
 
             border-radius: 12px;
 
-            border: 1px solid #e2e8f0;
-
             box-shadow:
-                0 7px 25px rgba(0, 0, 0, 0.04);
+                0 7px 25px
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.04
+                );
 
-            transition: all 0.3s ease;
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
         }
+
 
         .education-card:hover {
             transform: translateY(-4px);
 
             box-shadow:
-                0 12px 30px rgba(0, 0, 0, 0.08);
+                0 12px 30px
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.08
+                );
         }
+
 
         .education-icon {
             width: 58px;
+
             height: 58px;
 
             flex-shrink: 0;
 
             display: flex;
+
             align-items: center;
+
             justify-content: center;
 
-            background: #eff6ff;
-
             color: #2563eb;
+
+            background: #eff6ff;
 
             border-radius: 50%;
         }
 
+
         .education-icon svg {
             width: 27px;
+
             height: 27px;
         }
 
+
         .education-details h3 {
+            margin-bottom: 4px;
+
             color: #0f172a;
 
             font-size: 21px;
-
-            margin-bottom: 4px;
         }
 
+
         .education-details h4 {
+            margin-bottom: 5px;
+
             color: #2563eb;
 
             font-size: 16px;
-            font-weight: 600;
 
-            margin-bottom: 5px;
+            font-weight: 600;
         }
+
 
         .education-details p {
             color: #64748b;
         }
 
 
-        /* =========================================
+        /* =====================================================
            CV
-        ========================================== */
+        ====================================================== */
 
         .cv-section {
             background: white;
@@ -594,22 +834,27 @@
             text-align: center;
         }
 
+
         .cv-container {
             max-width: 750px;
 
             margin: auto;
         }
 
+
         .cv-container p {
-            font-size: 18px;
+            margin-bottom: 30px;
 
             color: #475569;
 
-            margin-bottom: 30px;
+            font-size: 18px;
         }
+
 
         .cv-buttons {
             display: flex;
+
+            align-items: center;
 
             justify-content: center;
 
@@ -618,22 +863,10 @@
             gap: 12px;
         }
 
-        .cv-download {
-            background: #0f172a;
 
-            color: white;
-        }
-
-        .cv-download:hover {
-            background: #1e293b;
-
-            transform: translateY(-2px);
-        }
-
-
-        /* =========================================
+        /* =====================================================
            CONTACT
-        ========================================== */
+        ====================================================== */
 
         .contact {
             background: #f8fafc;
@@ -641,84 +874,117 @@
             text-align: center;
         }
 
+
         .contact-content {
             max-width: 950px;
 
             margin: auto;
         }
 
+
         .contact-intro {
             max-width: 700px;
 
-            margin: 0 auto 40px;
-
-            font-size: 18px;
+            margin:
+                0 auto 40px;
 
             color: #475569;
+
+            font-size: 18px;
         }
+
 
         .contact-grid {
             display: grid;
 
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns:
+                repeat(
+                    3,
+                    1fr
+                );
 
             gap: 20px;
         }
 
+
         .contact-card {
+            padding: 35px 20px;
+
             background: white;
 
-            padding: 35px 20px;
+            border:
+                1px solid #e2e8f0;
 
             border-radius: 12px;
 
-            border: 1px solid #e2e8f0;
-
             box-shadow:
-                0 7px 25px rgba(0, 0, 0, 0.05);
+                0 7px 25px
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.05
+                );
 
             text-decoration: none;
 
-            transition: all 0.3s ease;
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
         }
+
 
         .contact-card:hover {
             transform: translateY(-6px);
 
             box-shadow:
-                0 15px 35px rgba(0, 0, 0, 0.09);
+                0 15px 35px
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.09
+                );
         }
+
 
         .contact-icon {
             width: 58px;
+
             height: 58px;
 
             display: flex;
 
             align-items: center;
+
             justify-content: center;
 
-            margin: 0 auto 17px;
-
-            background: #eff6ff;
+            margin:
+                0 auto 17px;
 
             color: #2563eb;
+
+            background: #eff6ff;
 
             border-radius: 50%;
         }
 
+
         .contact-icon svg {
             width: 27px;
+
             height: 27px;
         }
 
-        .contact-card h3 {
-            color: #0f172a;
 
+        .contact-card h3 {
             margin-bottom: 8px;
+
+            color: #0f172a;
 
             font-size: 20px;
         }
+
 
         .contact-card p {
             color: #64748b;
@@ -729,26 +995,27 @@
         }
 
 
-        /* =========================================
+        /* =====================================================
            FOOTER
-        ========================================== */
+        ====================================================== */
 
         footer {
-            background: #0f172a;
+            padding: 35px 20px;
 
             color: #94a3b8;
 
-            text-align: center;
+            background: #0f172a;
 
-            padding: 35px 20px;
+            text-align: center;
         }
+
 
         .footer-links {
             display: flex;
 
-            justify-content: center;
-
             align-items: center;
+
+            justify-content: center;
 
             flex-wrap: wrap;
 
@@ -757,42 +1024,41 @@
             margin-bottom: 17px;
         }
 
+
         .footer-links a {
             color: #cbd5e1;
 
-            text-decoration: none;
-
-            display: inline-flex;
-
-            align-items: center;
-
-            gap: 6px;
-
             font-size: 14px;
 
-            transition: 0.3s;
+            text-decoration: none;
+
+            transition: color 0.3s ease;
         }
+
 
         .footer-links a:hover {
             color: white;
         }
+
 
         footer p {
             font-size: 14px;
         }
 
 
-        /* =========================================
+        /* =====================================================
            TABLET
-        ========================================== */
+        ====================================================== */
 
         @media (max-width: 900px) {
 
             .hero-container {
-                grid-template-columns: 300px 1fr;
+                grid-template-columns:
+                    300px 1fr;
 
                 gap: 45px;
             }
+
 
             .hero-photo img {
                 max-width: 300px;
@@ -800,42 +1066,44 @@
                 height: 370px;
             }
 
-            .hero h1 {
-                font-size: 48px;
-            }
 
             .hero h2 {
                 font-size: 23px;
             }
 
-            .contact-grid {
-                grid-template-columns: 1fr;
 
+            .contact-grid {
                 max-width: 600px;
 
                 margin: auto;
+
+                grid-template-columns: 1fr;
             }
 
         }
 
 
-        /* =========================================
+        /* =====================================================
            MOBILE
-        ========================================== */
+        ====================================================== */
 
         @media (max-width: 700px) {
 
             nav {
-                padding: 14px 5%;
+                padding:
+                    14px 5%;
             }
+
 
             .logo {
                 font-size: 19px;
             }
 
+
             .menu-button {
                 display: flex;
             }
+
 
             .nav-links {
                 position: absolute;
@@ -853,37 +1121,59 @@
 
                 gap: 0;
 
+                padding:
+                    10px 5% 20px;
+
                 background: white;
 
-                padding: 10px 5% 20px;
-
-                border-bottom: 1px solid #e2e8f0;
+                border-bottom:
+                    1px solid #e2e8f0;
 
                 box-shadow:
-                    0 10px 25px rgba(0, 0, 0, 0.08);
+                    0 10px 25px
+                    rgba(
+                        0,
+                        0,
+                        0,
+                        0.08
+                    );
             }
+
 
             .nav-links.active {
                 display: flex;
             }
 
+
             .nav-links li {
                 width: 100%;
             }
 
-            .nav-links li a {
+
+            .nav-links a {
                 display: block;
 
                 width: 100%;
 
-                padding: 13px 8px;
+                padding:
+                    13px 8px;
 
-                border-bottom: 1px solid #f1f5f9;
+                border-bottom:
+                    1px solid #f1f5f9;
             }
+
+
+            .nav-links a::after {
+                display: none;
+            }
+
 
             .hero {
-                padding: 110px 25px 70px;
+                padding:
+                    110px 25px
+                    70px;
             }
+
 
             .hero-container {
                 grid-template-columns: 1fr;
@@ -893,15 +1183,18 @@
                 text-align: center;
             }
 
+
             .hero-photo {
                 order: 1;
             }
+
 
             .hero-text {
                 order: 2;
 
                 text-align: center;
             }
+
 
             .hero-photo img {
                 width: 245px;
@@ -911,63 +1204,101 @@
                 border-radius: 16px;
             }
 
+
             .intro {
                 font-size: 12px;
 
                 letter-spacing: 2px;
             }
 
+
             .hero h1 {
                 font-size: 43px;
             }
+
 
             .hero h2 {
                 font-size: 21px;
             }
 
+
             .university {
                 font-size: 17px;
             }
 
+
             .hero-description {
                 margin-left: auto;
+
                 margin-right: auto;
 
                 font-size: 16px;
             }
 
+
             .buttons {
                 justify-content: center;
             }
 
+
             section {
-                padding: 75px 25px;
+                padding:
+                    75px 25px;
             }
+
 
             .section-header h2 {
                 font-size: 31px;
             }
 
+
             .about-content {
                 font-size: 16px;
             }
 
+
             .education-card {
                 flex-direction: column;
 
-                text-align: center;
-
                 align-items: center;
+
+                text-align: center;
             }
+
 
             .cv-buttons {
                 flex-direction: column;
-
-                align-items: center;
             }
+
 
             .cv-buttons .btn {
                 width: 220px;
+            }
+
+        }
+
+
+        /* =====================================================
+           REDUCED MOTION
+        ====================================================== */
+
+        @media (
+            prefers-reduced-motion: reduce
+        ) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+
+            *,
+            *::before,
+            *::after {
+                animation-duration:
+                    0.01ms !important;
+
+                transition-duration:
+                    0.01ms !important;
             }
 
         }
@@ -980,21 +1311,38 @@
 <body>
 
 
-<!-- =========================================
+<!-- =====================================================
+     ACCESSIBILITY
+====================================================== -->
+
+<a class="skip-link"
+   href="#main-content">
+
+    Skip to main content
+
+</a>
+
+
+<!-- =====================================================
      NAVIGATION
-========================================== -->
+====================================================== -->
 
-<nav>
+<nav aria-label="Main navigation">
 
-    <div class="logo">
+    <a href="#home"
+       class="logo">
+
         Paul Omude
-    </div>
+
+    </a>
 
 
     <button
         class="menu-button"
         id="menuButton"
+        type="button"
         aria-label="Open navigation menu"
+        aria-controls="navLinks"
         aria-expanded="false">
 
         <svg
@@ -1005,7 +1353,9 @@
             stroke-linecap="round">
 
             <path d="M4 6h16"></path>
+
             <path d="M4 12h16"></path>
+
             <path d="M4 18h16"></path>
 
         </svg>
@@ -1013,35 +1363,55 @@
     </button>
 
 
-    <ul class="nav-links" id="navLinks">
+    <ul class="nav-links"
+        id="navLinks">
 
         <li>
-            <a href="#home">
+            <a href="#home"
+               class="nav-link active">
+
                 Home
+
             </a>
         </li>
 
+
         <li>
-            <a href="#about">
+            <a href="#about"
+               class="nav-link">
+
                 About
+
             </a>
         </li>
 
+
         <li>
-            <a href="#education">
+            <a href="#education"
+               class="nav-link">
+
                 Education
+
             </a>
         </li>
 
+
         <li>
-            <a href="#cv">
+            <a href="#cv"
+               class="nav-link">
+
                 CV
+
             </a>
         </li>
 
+
         <li>
-            <a href="#contact">
+            <a href="#contact"
+               class="nav-link">
+
                 Contact
+
             </a>
         </li>
 
@@ -1050,41 +1420,66 @@
 </nav>
 
 
-<!-- =========================================
-     HOME
-========================================== -->
+<main id="main-content">
 
-<section class="hero" id="home">
+
+<!-- =====================================================
+     HOME
+====================================================== -->
+
+<section
+    class="hero"
+    id="home">
+
 
     <div class="hero-container">
 
+
+        <!-- PHOTO -->
 
         <div class="hero-photo">
 
             <img
                 src="images/profile.jpg"
-                alt="Paul Omude">
+                alt="Portrait of Paul Omude"
+                width="360"
+                height="440">
 
         </div>
 
 
+        <!-- INTRODUCTION -->
+
         <div class="hero-text">
 
+
             <span class="intro">
+
                 Welcome to my website
+
             </span>
 
+
             <h1>
+
                 Paul Omude
+
             </h1>
 
+
             <h2>
+
                 Ph.D. Student in Computer Science
+
             </h2>
 
+
             <p class="university">
+
                 Oklahoma State University
+
             </p>
+
 
             <p class="hero-description">
 
@@ -1099,6 +1494,9 @@
 
             <div class="buttons">
 
+
+                <!-- ABOUT -->
+
                 <a
                     href="#about"
                     class="btn btn-primary">
@@ -1107,6 +1505,8 @@
 
                 </a>
 
+
+                <!-- CV -->
 
                 <a
                     href="cv.pdf"
@@ -1118,7 +1518,8 @@
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        stroke-width="2">
+                        stroke-width="2"
+                        aria-hidden="true">
 
                         <path
                             d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z">
@@ -1135,6 +1536,8 @@
                 </a>
 
 
+                <!-- GITHUB -->
+
                 <a
                     href="https://github.com/omudepaul"
                     target="_blank"
@@ -1143,7 +1546,8 @@
 
                     <svg
                         viewBox="0 0 24 24"
-                        fill="currentColor">
+                        fill="currentColor"
+                        aria-hidden="true">
 
                         <path
                             d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.2c-3.23.7-3.91-1.37-3.91-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.58-.29-5.29-1.29-5.29-5.75 0-1.27.45-2.31 1.19-3.12-.12-.29-.52-1.48.11-3.08 0 0 .97-.31 3.17 1.19A11.05 11.05 0 0 1 12 6.01c.98 0 1.96.13 2.88.39 2.2-1.5 3.17-1.19 3.17-1.19.63 1.6.23 2.79.11 3.08.74.81 1.19 1.85 1.19 3.12 0 4.47-2.72 5.45-5.31 5.74.42.36.79 1.07.79 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7z">
@@ -1155,20 +1559,27 @@
 
                 </a>
 
+
             </div>
+
 
         </div>
 
+
     </div>
+
 
 </section>
 
 
-<!-- =========================================
+<!-- =====================================================
      ABOUT
-========================================== -->
+====================================================== -->
 
-<section class="about" id="about">
+<section
+    class="about"
+    id="about">
+
 
     <div class="section-header">
 
@@ -1176,42 +1587,57 @@
             About Me
         </h2>
 
-        <div class="line"></div>
+        <div class="line">
+        </div>
 
     </div>
 
 
     <div class="about-content">
 
-        <p>
-            I am a Ph.D. student in Computer Science
-            at Oklahoma State University.
-        </p>
 
         <p>
+
+            I am a Ph.D. student in Computer Science
+            at Oklahoma State University.
+
+        </p>
+
+
+        <p>
+
             My academic and professional journey
             reflects a strong interest in computing,
             technology, innovation, problem solving,
             and continuous learning.
+
         </p>
 
+
         <p>
+
             I am committed to developing advanced
             technical knowledge and applying computing
             skills to practical challenges that can
             create meaningful impact.
+
         </p>
 
+
     </div>
+
 
 </section>
 
 
-<!-- =========================================
+<!-- =====================================================
      EDUCATION
-========================================== -->
+====================================================== -->
 
-<section class="education" id="education">
+<section
+    class="education"
+    id="education">
+
 
     <div class="section-header">
 
@@ -1219,7 +1645,8 @@
             Education
         </h2>
 
-        <div class="line"></div>
+        <div class="line">
+        </div>
 
         <p>
             My academic background in Computer Science.
@@ -1233,7 +1660,8 @@
 
         <!-- PHD -->
 
-        <div class="education-card">
+        <article class="education-card">
+
 
             <div class="education-icon">
 
@@ -1241,11 +1669,16 @@
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2">
+                    stroke-width="2"
+                    aria-hidden="true">
 
-                    <path d="M2 10l10-5 10 5-10 5-10-5z"></path>
+                    <path
+                        d="M2 10l10-5 10 5-10 5-10-5z">
+                    </path>
 
-                    <path d="M6 12v5c3 2 9 2 12 0v-5"></path>
+                    <path
+                        d="M6 12v5c3 2 9 2 12 0v-5">
+                    </path>
 
                 </svg>
 
@@ -1268,12 +1701,14 @@
 
             </div>
 
-        </div>
+
+        </article>
 
 
-        <!-- MASTER'S -->
+        <!-- MASTERS -->
 
-        <div class="education-card">
+        <article class="education-card">
+
 
             <div class="education-icon">
 
@@ -1281,11 +1716,16 @@
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2">
+                    stroke-width="2"
+                    aria-hidden="true">
 
-                    <path d="M2 10l10-5 10 5-10 5-10-5z"></path>
+                    <path
+                        d="M2 10l10-5 10 5-10 5-10-5z">
+                    </path>
 
-                    <path d="M6 12v5c3 2 9 2 12 0v-5"></path>
+                    <path
+                        d="M6 12v5c3 2 9 2 12 0v-5">
+                    </path>
 
                 </svg>
 
@@ -1308,12 +1748,14 @@
 
             </div>
 
-        </div>
+
+        </article>
 
 
-        <!-- BACHELOR'S -->
+        <!-- BACHELORS -->
 
-        <div class="education-card">
+        <article class="education-card">
+
 
             <div class="education-icon">
 
@@ -1321,11 +1763,16 @@
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2">
+                    stroke-width="2"
+                    aria-hidden="true">
 
-                    <path d="M2 10l10-5 10 5-10 5-10-5z"></path>
+                    <path
+                        d="M2 10l10-5 10 5-10 5-10-5z">
+                    </path>
 
-                    <path d="M6 12v5c3 2 9 2 12 0v-5"></path>
+                    <path
+                        d="M6 12v5c3 2 9 2 12 0v-5">
+                    </path>
 
                 </svg>
 
@@ -1348,19 +1795,24 @@
 
             </div>
 
-        </div>
+
+        </article>
 
 
     </div>
 
+
 </section>
 
 
-<!-- =========================================
+<!-- =====================================================
      CV
-========================================== -->
+====================================================== -->
 
-<section class="cv-section" id="cv">
+<section
+    class="cv-section"
+    id="cv">
+
 
     <div class="section-header">
 
@@ -1368,12 +1820,14 @@
             Curriculum Vitae
         </h2>
 
-        <div class="line"></div>
+        <div class="line">
+        </div>
 
     </div>
 
 
     <div class="cv-container">
+
 
         <p>
 
@@ -1388,6 +1842,8 @@
         <div class="cv-buttons">
 
 
+            <!-- VIEW CV -->
+
             <a
                 href="cv.pdf"
                 target="_blank"
@@ -1398,7 +1854,8 @@
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2">
+                    stroke-width="2"
+                    aria-hidden="true">
 
                     <path
                         d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z">
@@ -1417,24 +1874,31 @@
             </a>
 
 
+            <!-- DOWNLOAD CV -->
+
             <a
                 href="cv.pdf"
                 download="Paul-Omude-CV.pdf"
-                class="btn cv-download">
+                class="btn btn-dark">
 
                 <svg
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2">
+                    stroke-width="2"
+                    aria-hidden="true">
 
-                    <path d="M12 3v12"></path>
+                    <path
+                        d="M12 3v12">
+                    </path>
 
                     <polyline
                         points="7 10 12 15 17 10">
                     </polyline>
 
-                    <path d="M5 21h14"></path>
+                    <path
+                        d="M5 21h14">
+                    </path>
 
                 </svg>
 
@@ -1445,16 +1909,21 @@
 
         </div>
 
+
     </div>
+
 
 </section>
 
 
-<!-- =========================================
+<!-- =====================================================
      CONTACT
-========================================== -->
+====================================================== -->
 
-<section class="contact" id="contact">
+<section
+    class="contact"
+    id="contact">
+
 
     <div class="section-header">
 
@@ -1462,12 +1931,14 @@
             Connect With Me
         </h2>
 
-        <div class="line"></div>
+        <div class="line">
+        </div>
 
     </div>
 
 
     <div class="contact-content">
+
 
         <p class="contact-intro">
 
@@ -1493,7 +1964,8 @@
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        stroke-width="2">
+                        stroke-width="2"
+                        aria-hidden="true">
 
                         <path
                             d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z">
@@ -1512,9 +1984,11 @@
                     Email
                 </h3>
 
+
                 <p>
                     omudepaul@gmail.com
                 </p>
+
 
             </a>
 
@@ -1531,7 +2005,8 @@
 
                     <svg
                         viewBox="0 0 24 24"
-                        fill="currentColor">
+                        fill="currentColor"
+                        aria-hidden="true">
 
                         <path
                             d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29zM5.32 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.1 20.45H3.54V8.98H7.1v11.47z">
@@ -1546,9 +2021,11 @@
                     LinkedIn
                 </h3>
 
+
                 <p>
                     linkedin.com/in/omudepaul
                 </p>
+
 
             </a>
 
@@ -1565,7 +2042,8 @@
 
                     <svg
                         viewBox="0 0 24 24"
-                        fill="currentColor">
+                        fill="currentColor"
+                        aria-hidden="true">
 
                         <path
                             d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.2c-3.23.7-3.91-1.37-3.91-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.58-.29-5.29-1.29-5.29-5.75 0-1.27.45-2.31 1.19-3.12-.12-.29-.52-1.48.11-3.08 0 0 .97-.31 3.17 1.19A11.05 11.05 0 0 1 12 6.01c.98 0 1.96.13 2.88.39 2.2-1.5 3.17-1.19 3.17-1.19.63 1.6.23 2.79.11 3.08.74.81 1.19 1.85 1.19 3.12 0 4.47-2.72 5.45-5.31 5.74.42.36.79 1.07.79 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7z">
@@ -1580,30 +2058,41 @@
                     GitHub
                 </h3>
 
+
                 <p>
                     github.com/omudepaul
                 </p>
+
 
             </a>
 
 
         </div>
 
+
     </div>
+
 
 </section>
 
 
-<!-- =========================================
+</main>
+
+
+<!-- =====================================================
      FOOTER
-========================================== -->
+====================================================== -->
 
 <footer>
 
+
     <div class="footer-links">
 
+
         <a href="mailto:omudepaul@gmail.com">
+
             Email
+
         </a>
 
 
@@ -1636,37 +2125,55 @@
 
         </a>
 
+
     </div>
 
 
     <p>
-        © 2026 Paul Omude. All Rights Reserved.
+
+        © <span id="year"></span>
+        Paul Omude.
+        All Rights Reserved.
+
     </p>
+
 
 </footer>
 
 
-<!-- =========================================
-     MOBILE NAVIGATION JAVASCRIPT
-========================================== -->
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
 
 <script>
 
+    /* -----------------------------------------
+       MOBILE MENU
+    ------------------------------------------ */
+
     const menuButton =
-        document.getElementById("menuButton");
+        document.getElementById(
+            "menuButton"
+        );
 
     const navLinks =
-        document.getElementById("navLinks");
+        document.getElementById(
+            "navLinks"
+        );
 
 
     menuButton.addEventListener(
         "click",
         function () {
 
-            navLinks.classList.toggle("active");
+            navLinks.classList.toggle(
+                "active"
+            );
 
             const isOpen =
-                navLinks.classList.contains("active");
+                navLinks.classList.contains(
+                    "active"
+                );
 
             menuButton.setAttribute(
                 "aria-expanded",
@@ -1678,24 +2185,121 @@
 
 
     document
-        .querySelectorAll(".nav-links a")
-        .forEach(function (link) {
+        .querySelectorAll(
+            ".nav-links a"
+        )
+        .forEach(
+            function (link) {
 
-            link.addEventListener(
-                "click",
-                function () {
+                link.addEventListener(
+                    "click",
+                    function () {
 
-                    navLinks.classList.remove("active");
+                        navLinks.classList.remove(
+                            "active"
+                        );
 
-                    menuButton.setAttribute(
-                        "aria-expanded",
-                        "false"
-                    );
+                        menuButton.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
 
-                }
+                    }
+                );
+
+            }
+        );
+
+
+    /* -----------------------------------------
+       ACTIVE NAVIGATION LINK
+    ------------------------------------------ */
+
+    const sections =
+        document.querySelectorAll(
+            "main section[id]"
+        );
+
+    const navigationLinks =
+        document.querySelectorAll(
+            ".nav-link"
+        );
+
+
+    const observer =
+        new IntersectionObserver(
+
+            function (entries) {
+
+                entries.forEach(
+                    function (entry) {
+
+                        if (
+                            entry.isIntersecting
+                        ) {
+
+                            navigationLinks
+                                .forEach(
+                                    function (link) {
+
+                                        link.classList.remove(
+                                            "active"
+                                        );
+
+                                    }
+                                );
+
+
+                            const activeLink =
+                                document.querySelector(
+                                    '.nav-link[href="#' +
+                                    entry.target.id +
+                                    '"]'
+                                );
+
+
+                            if (activeLink) {
+
+                                activeLink.classList.add(
+                                    "active"
+                                );
+
+                            }
+
+                        }
+
+                    }
+                );
+
+            },
+
+            {
+                rootMargin:
+                    "-35% 0px -55% 0px"
+            }
+
+        );
+
+
+    sections.forEach(
+        function (section) {
+
+            observer.observe(
+                section
             );
 
-        });
+        }
+    );
+
+
+    /* -----------------------------------------
+       AUTOMATIC COPYRIGHT YEAR
+    ------------------------------------------ */
+
+    document.getElementById(
+        "year"
+    ).textContent =
+        new Date().getFullYear();
 
 </script>
 
